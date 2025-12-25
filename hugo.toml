@@ -1,4 +1,4 @@
-baseURL = 'https://thaiphong-blog.vercel.app/'
+baseURL = 'thaiphong-blog.vercel.app/'
 languageCode = 'vi'
 title = 'Blog Cá Nhân '
 theme = "PaperMod"
