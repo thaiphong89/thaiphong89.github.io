@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Liên hệ - Hồ Thái Phong</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    
+    <script>
+        tailwind.config = {
+            darkMode: "class", 
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#334155", "primary-hover": "#0f172a",
+                        "background-light": "#ffffff", "background-dark": "#0f172a", 
+                        "text-light": "#334155", "text-dark": "#e2e8f0"
+                    }, 
+                    fontFamily: { display: "Manrope", body: ["Inter", "sans-serif"] }
+                }
+            }
+        };
+    </script>
+
+    <meta name="view-transition" content="same-origin" />
+    <style> 
+         
+        html { scrollbar-gutter: stable; }
+
+         
+        body { font-family: 'Inter', sans-serif; }
+
+        @view-transition { navigation: auto; }
+        
+        ::view-transition-old(root) { animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both fade-out; }
+        ::view-transition-new(root) { animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both fade-in; }
+        
+        @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fade-out { from { opacity: 1; } to { opacity: 0; } }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-slate-200 dark:selection:bg-slate-700">
+
+<nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/90 dark:bg-background-dark/90 border-b border-slate-100 dark:border-slate-800 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <div class="flex items-center gap-4">
+                <a class="text-xl font-bold tracking-tight text-slate-900 dark:text-white group flex items-center gap-2" href="/">
+                    <span class="font-display">Hồ Thái Phong</span>
+                </a>
+                <div class="h-4 w-px bg-slate-300 dark:bg-slate-700 hidden sm:block"></div>
+               
+            </div>
+            
+           <div class="hidden md:flex items-center space-x-1">
+                <a href="/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors  text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50 ">Home</a>
+                <a href="/about/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors  text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50 ">About</a>
+                <a href="/resume/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors  text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50 ">Resume</a>
+                <a href="/posts/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors  text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50 ">Blog</a>
+                <a href="/contact/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors  bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white ">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <button class="p-2 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-white dark:hover:bg-slate-800 transition-all focus:outline-none" id="theme-toggle">
+                    <svg class="hidden dark:block w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    <svg class="block dark:hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </button>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none">
+                        <svg class="w-6 h-6 text-slate-600 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Home</a>
+            <a href="/about/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">About</a>
+            <a href="/resume/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Resume</a>
+            <a href="/posts/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Blog</a>
+            <a href="/contact/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<main class="flex-grow py-12 px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-10 text-center sm:text-left border-b border-slate-200 dark:border-slate-800 pb-8">
+            <h1 class="text-3xl sm:text-5xl font-bold text-slate-900 dark:text-white font-display mb-4">Liên hệ</h1>
+            
+            <p class="text-lg text-slate-600 dark:text-slate-400">Kết nối để trao đổi công việc và học tập.</p>
+            
+        </header>
+
+        <article class="prose prose-slate dark:prose-invert max-w-none 
+                        prose-headings:font-display prose-headings:font-bold 
+                        prose-a:text-blue-600 hover:prose-a:text-blue-500
+                        prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-200 dark:prose-img:border-slate-700">
+            <script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#3B82F6", 
+                }
+            }
+        }
+    }
+</script>
+<style>
+    .contact-card { transition: all 0.3s ease; }
+    .contact-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+</style>
+<div class="w-full max-w-4xl mx-auto py-10 px-4">
+<div class="text-center space-y-6 mb-12">
+        <div class="w-24 h-1 bg-primary mx-auto rounded-full opacity-80"></div>
+        <p class="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
+            Tôi luôn sẵn sàng đón nhận các cơ hội hợp tác mới hoặc thảo luận về các dự án thú vị.<br>
+            Đừng ngần ngại gửi tin nhắn cho tôi qua các kênh dưới đây.
+        </p>
+    </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<a href="mailto:email_cua_ban@gmail.com" class="contact-card group flex items-center p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
+            <div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 text-blue-600 rounded-lg flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white group-hover:text-blue-600 transition-colors">Email</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Gửi mail cho tôi</p>
+                <span class="text-xs text-blue-500 font-medium mt-1 block">Gửi ngay &rarr;</span>
+            </div>
+        </a>
+<a href="https://www.facebook.com/hothai.phong.1656/" target="_blank" class="contact-card group flex items-center p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
+            <div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 text-[#1877F2] rounded-lg flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform">
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white group-hover:text-[#1877F2] transition-colors">Facebook</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Theo dõi hoạt động</p>
+                <span class="text-xs text-blue-500 font-medium mt-1 block">Kết nối &rarr;</span>
+            </div>
+        </a>
+<a href="https://github.com/thaiphong89" target="_blank" class="contact-card group flex items-center p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
+            <div class="w-14 h-14 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform">
+                <i class="fab fa-github"></i>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white group-hover:underline transition-colors">GitHub</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Xem mã nguồn</p>
+                <span class="text-xs text-blue-500 font-medium mt-1 block">Khám phá &rarr;</span>
+            </div>
+        </a>
+<a href="https://www.linkedin.com/in/th%C3%A1i-phong-h%E1%BB%93-02a3373a0/" target="_blank" class="contact-card group flex items-center p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
+            <div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 text-[#0A66C2] rounded-lg flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform">
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-900 dark:text-white group-hover:text-[#0A66C2] transition-colors">LinkedIn</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Kết nối chuyên nghiệp</p>
+                <span class="text-xs text-blue-500 font-medium mt-1 block">Kết nối &rarr;</span>
+            </div>
+        </a>
+</div>
+<div class="mt-12 text-center border-t border-gray-200 dark:border-gray-700 pt-8">
+        <div class="inline-flex items-center gap-2 text-gray-500 bg-gray-100 dark:bg-slate-800 px-4 py-2 rounded-full text-sm">
+            <i class="fas fa-map-marker-alt text-red-500"></i>
+            <span>Thành phố Hồ Chí Minh, Việt Nam</span>
+        </div>
+    </div>
+</div>
+        </article>
+
+    </div>
+</main>
+
+<footer class="py-8 text-center text-sm text-slate-400 dark:text-slate-500 border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-background-dark transition-colors duration-300 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p>© 2025 Hồ Thái Phong. All rights reserved.</p>
+        <p class="text-xs">Powered by Hugo & PaperMod</p>
+    </div>
+</footer>
+
+<script>
+    const themeBtn = document.querySelector("#theme-toggle");
+    const html = document.querySelector("html");
+    const mobileBtn = document.querySelector("#mobile-menu-btn");
+    const mobileMenu = document.querySelector("#mobile-menu");
+
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        html.classList.add('dark');
+    } else {
+        html.classList.remove('dark');
+    }
+    themeBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+    });
+
+    if(mobileBtn && mobileMenu){
+        mobileBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+<script>
+    mediumZoom('[data-zoomable]', {
+        margin: 24,
+        background: localStorage.theme === 'dark' ? '#0f172a' : '#ffffff',
+        scrollOffset: 0,
+    });
+</script>
+</body>
+</html>

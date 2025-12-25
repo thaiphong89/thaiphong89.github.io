@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DRY on Blog Cá Nhân </title>
+    <link>https://thaiphong-blog.vercel.app/tags/dry/</link>
+    <description>Recent content in DRY on Blog Cá Nhân </description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Sun, 12 Jan 2025 08:00:00 +0700</lastBuildDate>
+    <atom:link href="https://thaiphong-blog.vercel.app/tags/dry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java OOP Phần 2: Đừng Lặp Lại Chính Mình (Inheritance)</title>
+      <link>https://thaiphong-blog.vercel.app/posts/ke_thua_oop/</link>
+      <pubDate>Sun, 12 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong-blog.vercel.app/posts/ke_thua_oop/</guid>
+      <description>Lập trình viên giỏi là người biết &amp;rsquo;lười&amp;rsquo; đúng cách. Tại sao phải viết lại những đoạn code giống hệt nhau? Hãy để tính Kế thừa giúp bạn.</description>
+    </item>
+  </channel>
+</rss>

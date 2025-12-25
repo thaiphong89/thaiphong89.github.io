@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Blog - Hồ Thái Phong</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
+    
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3b82f6", 
+                        "primary-dark": "#2563eb",
+                        "background-light": "#f8fafc", 
+                        "background-dark": "#0f172a",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1e293b",
+                        "text-light": "#1e293b",
+                        "text-dark": "#f1f5f9",
+                        "subtext-light": "#64748b",
+                        "subtext-dark": "#94a3b8",
+                        "border-light": "#e2e8f0",
+                        "border-dark": "#334155",
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                         'glow-gradient': "radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.15) 0%, rgba(0, 0, 0, 0) 50%)",
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        html { scrollbar-gutter: stable; }
+        body { min-height: 100vh; }
+        
+         
+        .bg-grid-pattern {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+        }
+        .dark .bg-grid-pattern {
+            background-image: linear-gradient(to right, rgba(148, 163, 184, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(148, 163, 184, 0.05) 1px, transparent 1px);
+        }
+
+         
+        .fade-in-up {
+            animation: fadeInUp 0.5s ease-out forwards;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+
+         
+        @view-transition { navigation: auto; }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300 min-h-screen flex flex-col antialiased relative overflow-x-hidden selection:bg-primary selection:text-white">
+
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <div class="absolute top-0 left-0 right-0 h-[500px] bg-glow-gradient opacity-80 dark:opacity-40"></div>
+        <div class="absolute inset-0 bg-grid-pattern z-0"></div>
+        <div class="absolute top-[-10%] right-[-10%] w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-[20%] left-[-10%] w-72 h-72 bg-purple-500/10 dark:bg-purple-500/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/80 dark:bg-background-dark/80 border-b border-border-light dark:border-border-dark transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-4">
+                    <a class="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2" href="/">
+                        <span class="font-display">Hồ Thái Phong</span>
+                    </a>
+                    <div class="h-4 w-px bg-slate-300 dark:bg-slate-700 hidden sm:block"></div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors hover:text-primary">Home</a>
+                    <a href="/about/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors hover:text-primary">About</a>
+                    <a href="/resume/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors hover:text-primary">Resume</a>
+                    <a href="/posts/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors bg-primary/10 text-primary">Blog</a>
+                    <a href="/contact/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors hover:text-primary">Contact</a>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <button class="p-2 rounded-lg text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-white transition-colors" id="theme-toggle">
+                        <span class="material-icons-round block dark:hidden text-xl">dark_mode</span>
+                        <span class="material-icons-round hidden dark:block text-xl">light_mode</span>
+                    </button>
+
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-btn" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                            <span class="material-icons-round text-2xl">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 transition-all">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="/" class="block px-3 py-2 rounded-md font-medium hover:bg-slate-50 dark:hover:bg-slate-800">Home</a>
+                <a href="/posts/" class="block px-3 py-2 rounded-md font-medium text-primary bg-primary/10">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative z-10 flex-grow py-12 px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto">
+            
+            <header class="mb-12 fade-in-up">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-display font-bold text-text-light dark:text-white flex items-center gap-3 tracking-tight">
+                            Bài viết mới nhất <span class="animate-bounce" style="animation-duration: 2s;"></span>
+                        </h1>
+                        <p class="mt-2 text-subtext-light dark:text-subtext-dark text-sm md:text-base font-medium">
+                            Chia sẻ kiến thức về Lập trình & Công nghệ.
+                        </p>
+                    </div>
+                    
+                    <div class="relative group w-full md:w-72">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <span class="material-icons-round text-subtext-light dark:text-subtext-dark group-focus-within:text-primary transition-colors text-xl">search</span>
+                        </div>
+                        <input id="searchInput" 
+                               class="block w-full pl-10 pr-3 py-2.5 border border-border-light dark:border-border-dark rounded-xl leading-5 bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm text-text-light dark:text-text-dark placeholder-subtext-light dark:placeholder-subtext-dark focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all shadow-sm hover:shadow-md" 
+                               placeholder="Tìm kiếm bài viết..." type="text"/>
+                    </div>
+                </div>
+                <div class="h-px w-full bg-gradient-to-r from-transparent via-border-light dark:via-border-dark to-transparent mt-6"></div>
+            </header>
+
+            <div id="postsContainer" class="space-y-6">
+                
+                <article class="post-item group relative bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm rounded-2xl p-6 border border-border-light dark:border-border-dark shadow-sm hover:shadow-xl hover:shadow-primary/5 dark:hover:shadow-primary/10 transition-all duration-300 fade-in-up hover:-translate-y-1" style="display: none;"> <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="flex items-center gap-2 mb-3 text-xs font-semibold text-subtext-light dark:text-subtext-dark uppercase tracking-wider">
+                        <span class="material-icons-round text-sm text-primary">calendar_today</span>
+                        <time>15/01/2025</time>
+                    </div>
+                    
+                    <h2 class="text-xl md:text-2xl font-bold font-display text-text-light dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight post-title">
+                        <a href="https://thaiphong-blog.vercel.app/posts/java_oop/" class="focus:outline-none">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                            Lịch sử &amp; Tầm quan trọng của OOP: Tại sao nó thay đổi thế giới?
+                        </a>
+                    </h2>
+                    
+                    <p class="text-subtext-light dark:text-subtext-dark mb-5 leading-relaxed text-sm md:text-base line-clamp-2 post-summary">
+                        Tại sao chúng ta không cứ viết code theo kiểu cũ cho nhanh mà phải dùng Class và Object? Cùng tìm hiểu nguồn gốc và triết lý của OOP.
+                    </p>
+                    
+                    <div class="flex items-center text-primary font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
+                        Đọc tiếp
+                        <span class="material-icons-round text-base ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </article>
+                
+                <article class="post-item group relative bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm rounded-2xl p-6 border border-border-light dark:border-border-dark shadow-sm hover:shadow-xl hover:shadow-primary/5 dark:hover:shadow-primary/10 transition-all duration-300 fade-in-up hover:-translate-y-1" style="display: none;"> <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="flex items-center gap-2 mb-3 text-xs font-semibold text-subtext-light dark:text-subtext-dark uppercase tracking-wider">
+                        <span class="material-icons-round text-sm text-primary">calendar_today</span>
+                        <time>14/01/2025</time>
+                    </div>
+                    
+                    <h2 class="text-xl md:text-2xl font-bold font-display text-text-light dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight post-title">
+                        <a href="https://thaiphong-blog.vercel.app/posts/tru_tuong_oop/" class="focus:outline-none">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                            Java OOP Phần 4: Tư Duy Của Kiến Trúc Sư (Abstraction)
+                        </a>
+                    </h2>
+                    
+                    <p class="text-subtext-light dark:text-subtext-dark mb-5 leading-relaxed text-sm md:text-base line-clamp-2 post-summary">
+                        Để lái xe hơi, bạn có cần biết động cơ đốt trong hoạt động ra sao không? Không. Bạn chỉ cần biết Vô-lăng và Chân ga. Đó chính là sự Trừu tượng hóa.
+                    </p>
+                    
+                    <div class="flex items-center text-primary font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
+                        Đọc tiếp
+                        <span class="material-icons-round text-base ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </article>
+                
+                <article class="post-item group relative bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm rounded-2xl p-6 border border-border-light dark:border-border-dark shadow-sm hover:shadow-xl hover:shadow-primary/5 dark:hover:shadow-primary/10 transition-all duration-300 fade-in-up hover:-translate-y-1" style="display: none;"> <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="flex items-center gap-2 mb-3 text-xs font-semibold text-subtext-light dark:text-subtext-dark uppercase tracking-wider">
+                        <span class="material-icons-round text-sm text-primary">calendar_today</span>
+                        <time>13/01/2025</time>
+                    </div>
+                    
+                    <h2 class="text-xl md:text-2xl font-bold font-display text-text-light dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight post-title">
+                        <a href="https://thaiphong-blog.vercel.app/posts/da_hinh_oop/" class="focus:outline-none">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                            Java OOP Phần 3: Sự Linh Hoạt Của Đa Hình (Polymorphism)
+                        </a>
+                    </h2>
+                    
+                    <p class="text-subtext-light dark:text-subtext-dark mb-5 leading-relaxed text-sm md:text-base line-clamp-2 post-summary">
+                        Làm thế nào để quản lý một sở thú hỗn loạn với hàng trăm loài vật khác nhau chỉ bằng một dòng lệnh? Đa hình chính là câu trả lời.
+                    </p>
+                    
+                    <div class="flex items-center text-primary font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
+                        Đọc tiếp
+                        <span class="material-icons-round text-base ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </article>
+                
+                <article class="post-item group relative bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm rounded-2xl p-6 border border-border-light dark:border-border-dark shadow-sm hover:shadow-xl hover:shadow-primary/5 dark:hover:shadow-primary/10 transition-all duration-300 fade-in-up hover:-translate-y-1" style="display: none;"> <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="flex items-center gap-2 mb-3 text-xs font-semibold text-subtext-light dark:text-subtext-dark uppercase tracking-wider">
+                        <span class="material-icons-round text-sm text-primary">calendar_today</span>
+                        <time>12/01/2025</time>
+                    </div>
+                    
+                    <h2 class="text-xl md:text-2xl font-bold font-display text-text-light dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight post-title">
+                        <a href="https://thaiphong-blog.vercel.app/posts/ke_thua_oop/" class="focus:outline-none">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                            Java OOP Phần 2: Đừng Lặp Lại Chính Mình (Inheritance)
+                        </a>
+                    </h2>
+                    
+                    <p class="text-subtext-light dark:text-subtext-dark mb-5 leading-relaxed text-sm md:text-base line-clamp-2 post-summary">
+                        Lập trình viên giỏi là người biết &rsquo;lười&rsquo; đúng cách. Tại sao phải viết lại những đoạn code giống hệt nhau? Hãy để tính Kế thừa giúp bạn.
+                    </p>
+                    
+                    <div class="flex items-center text-primary font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
+                        Đọc tiếp
+                        <span class="material-icons-round text-base ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </article>
+                
+                <article class="post-item group relative bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm rounded-2xl p-6 border border-border-light dark:border-border-dark shadow-sm hover:shadow-xl hover:shadow-primary/5 dark:hover:shadow-primary/10 transition-all duration-300 fade-in-up hover:-translate-y-1" style="display: none;"> <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="flex items-center gap-2 mb-3 text-xs font-semibold text-subtext-light dark:text-subtext-dark uppercase tracking-wider">
+                        <span class="material-icons-round text-sm text-primary">calendar_today</span>
+                        <time>11/01/2025</time>
+                    </div>
+                    
+                    <h2 class="text-xl md:text-2xl font-bold font-display text-text-light dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight post-title">
+                        <a href="https://thaiphong-blog.vercel.app/posts/dong_goi_oop/" class="focus:outline-none">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                            Java OOP Phần 1: Tại Sao Phải &#39;Giấu&#39; Dữ Liệu? (Encapsulation)
+                        </a>
+                    </h2>
+                    
+                    <p class="text-subtext-light dark:text-subtext-dark mb-5 leading-relaxed text-sm md:text-base line-clamp-2 post-summary">
+                        Bạn có dám để ví tiền của mình giữa đường cho ai cũng có thể lấy? Nếu câu trả lời là không, thì bạn đã hiểu về tính Đóng gói trong lập trình rồi đấy.
+                    </p>
+                    
+                    <div class="flex items-center text-primary font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
+                        Đọc tiếp
+                        <span class="material-icons-round text-base ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </article>
+                
+                <article class="post-item group relative bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm rounded-2xl p-6 border border-border-light dark:border-border-dark shadow-sm hover:shadow-xl hover:shadow-primary/5 dark:hover:shadow-primary/10 transition-all duration-300 fade-in-up hover:-translate-y-1" style="display: none;"> <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="flex items-center gap-2 mb-3 text-xs font-semibold text-subtext-light dark:text-subtext-dark uppercase tracking-wider">
+                        <span class="material-icons-round text-sm text-primary">calendar_today</span>
+                        <time>06/01/2025</time>
+                    </div>
+                    
+                    <h2 class="text-xl md:text-2xl font-bold font-display text-text-light dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight post-title">
+                        <a href="https://thaiphong-blog.vercel.app/posts/java_mang/" class="focus:outline-none">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                            Java Bài 5: Mảng (Arrays) - Quản Lý Danh Sách
+                        </a>
+                    </h2>
+                    
+                    <p class="text-subtext-light dark:text-subtext-dark mb-5 leading-relaxed text-sm md:text-base line-clamp-2 post-summary">
+                        Làm thế nào để lưu điểm số của 100 sinh viên mà không cần khai báo 100 biến? Mảng chính là câu trả lời.
+                    </p>
+                    
+                    <div class="flex items-center text-primary font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
+                        Đọc tiếp
+                        <span class="material-icons-round text-base ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </article>
+                
+                <article class="post-item group relative bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm rounded-2xl p-6 border border-border-light dark:border-border-dark shadow-sm hover:shadow-xl hover:shadow-primary/5 dark:hover:shadow-primary/10 transition-all duration-300 fade-in-up hover:-translate-y-1" style="display: none;"> <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="flex items-center gap-2 mb-3 text-xs font-semibold text-subtext-light dark:text-subtext-dark uppercase tracking-wider">
+                        <span class="material-icons-round text-sm text-primary">calendar_today</span>
+                        <time>05/01/2025</time>
+                    </div>
+                    
+                    <h2 class="text-xl md:text-2xl font-bold font-display text-text-light dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight post-title">
+                        <a href="https://thaiphong-blog.vercel.app/posts/java_vong_lap/" class="focus:outline-none">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                            Java Bài 4: Vòng Lặp For và While
+                        </a>
+                    </h2>
+                    
+                    <p class="text-subtext-light dark:text-subtext-dark mb-5 leading-relaxed text-sm md:text-base line-clamp-2 post-summary">
+                        Đừng lặp lại code thủ công! Hãy để máy tính làm việc nặng nhọc với vòng lặp For và While.
+                    </p>
+                    
+                    <div class="flex items-center text-primary font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
+                        Đọc tiếp
+                        <span class="material-icons-round text-base ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </article>
+                
+                <article class="post-item group relative bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm rounded-2xl p-6 border border-border-light dark:border-border-dark shadow-sm hover:shadow-xl hover:shadow-primary/5 dark:hover:shadow-primary/10 transition-all duration-300 fade-in-up hover:-translate-y-1" style="display: none;"> <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="flex items-center gap-2 mb-3 text-xs font-semibold text-subtext-light dark:text-subtext-dark uppercase tracking-wider">
+                        <span class="material-icons-round text-sm text-primary">calendar_today</span>
+                        <time>04/01/2025</time>
+                    </div>
+                    
+                    <h2 class="text-xl md:text-2xl font-bold font-display text-text-light dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight post-title">
+                        <a href="https://thaiphong-blog.vercel.app/posts/java-cau-lenh-if-else/" class="focus:outline-none">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                            Java Bài 3: Câu Lệnh Điều Kiện If-Else
+                        </a>
+                    </h2>
+                    
+                    <p class="text-subtext-light dark:text-subtext-dark mb-5 leading-relaxed text-sm md:text-base line-clamp-2 post-summary">
+                        Làm sao để chương trình thông minh hơn? Hãy dạy nó cách đưa ra quyết định dựa trên các điều kiện.
+                    </p>
+                    
+                    <div class="flex items-center text-primary font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
+                        Đọc tiếp
+                        <span class="material-icons-round text-base ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </article>
+                
+                <article class="post-item group relative bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm rounded-2xl p-6 border border-border-light dark:border-border-dark shadow-sm hover:shadow-xl hover:shadow-primary/5 dark:hover:shadow-primary/10 transition-all duration-300 fade-in-up hover:-translate-y-1" style="display: none;"> <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="flex items-center gap-2 mb-3 text-xs font-semibold text-subtext-light dark:text-subtext-dark uppercase tracking-wider">
+                        <span class="material-icons-round text-sm text-primary">calendar_today</span>
+                        <time>03/01/2025</time>
+                    </div>
+                    
+                    <h2 class="text-xl md:text-2xl font-bold font-display text-text-light dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight post-title">
+                        <a href="https://thaiphong-blog.vercel.app/posts/java_bien_du_lieu/" class="focus:outline-none">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                            Java Bài 2: Biến và Các Kiểu Dữ Liệu Cơ Bản
+                        </a>
+                    </h2>
+                    
+                    <p class="text-subtext-light dark:text-subtext-dark mb-5 leading-relaxed text-sm md:text-base line-clamp-2 post-summary">
+                        Tìm hiểu về các hộp chứa dữ liệu trong Java: Biến là gì? Có những kiểu dữ liệu nào quan trọng?
+                    </p>
+                    
+                    <div class="flex items-center text-primary font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
+                        Đọc tiếp
+                        <span class="material-icons-round text-base ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </article>
+                
+                <article class="post-item group relative bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm rounded-2xl p-6 border border-border-light dark:border-border-dark shadow-sm hover:shadow-xl hover:shadow-primary/5 dark:hover:shadow-primary/10 transition-all duration-300 fade-in-up hover:-translate-y-1" style="display: none;"> <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="flex items-center gap-2 mb-3 text-xs font-semibold text-subtext-light dark:text-subtext-dark uppercase tracking-wider">
+                        <span class="material-icons-round text-sm text-primary">calendar_today</span>
+                        <time>02/01/2025</time>
+                    </div>
+                    
+                    <h2 class="text-xl md:text-2xl font-bold font-display text-text-light dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight post-title">
+                        <a href="https://thaiphong-blog.vercel.app/posts/hello/" class="focus:outline-none">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                            Làm quen với Java: Hướng dẫn cho người mới bắt đầu
+                        </a>
+                    </h2>
+                    
+                    <p class="text-subtext-light dark:text-subtext-dark mb-5 leading-relaxed text-sm md:text-base line-clamp-2 post-summary">
+                        Khám phá ngôn ngữ lập trình Java - &lsquo;Viết một lần, chạy mọi nơi&rsquo;. Bài viết này sẽ giúp bạn hiểu cú pháp cơ bản và viết chương trình đầu tiên.
+                    </p>
+                    
+                    <div class="flex items-center text-primary font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
+                        Đọc tiếp
+                        <span class="material-icons-round text-base ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </article>
+                
+                <article class="post-item group relative bg-card-light/80 dark:bg-card-dark/80 backdrop-blur-sm rounded-2xl p-6 border border-border-light dark:border-border-dark shadow-sm hover:shadow-xl hover:shadow-primary/5 dark:hover:shadow-primary/10 transition-all duration-300 fade-in-up hover:-translate-y-1" style="display: none;"> <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-bl-full rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    <div class="flex items-center gap-2 mb-3 text-xs font-semibold text-subtext-light dark:text-subtext-dark uppercase tracking-wider">
+                        <span class="material-icons-round text-sm text-primary">calendar_today</span>
+                        <time>02/01/2025</time>
+                    </div>
+                    
+                    <h2 class="text-xl md:text-2xl font-bold font-display text-text-light dark:text-white mb-3 group-hover:text-primary transition-colors leading-tight post-title">
+                        <a href="https://thaiphong-blog.vercel.app/posts/java_co_ban/" class="focus:outline-none">
+                            <span aria-hidden="true" class="absolute inset-0"></span>
+                            Làm quen với Java: Hướng dẫn cho người mới bắt đầu
+                        </a>
+                    </h2>
+                    
+                    <p class="text-subtext-light dark:text-subtext-dark mb-5 leading-relaxed text-sm md:text-base line-clamp-2 post-summary">
+                        Khám phá ngôn ngữ lập trình Java - &lsquo;Viết một lần, chạy mọi nơi&rsquo;. Bài viết này sẽ giúp bạn hiểu cú pháp cơ bản và viết chương trình đầu tiên.
+                    </p>
+                    
+                    <div class="flex items-center text-primary font-semibold text-sm group-hover:underline decoration-2 underline-offset-4">
+                        Đọc tiếp
+                        <span class="material-icons-round text-base ml-1 transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="mt-12 text-center" id="loadMoreContainer">
+                <button id="loadMoreBtn" class="inline-flex items-center gap-2 px-6 py-3 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-full text-sm font-medium text-subtext-light dark:text-subtext-dark hover:text-primary hover:border-primary transition-colors shadow-sm">
+                    Xem thêm bài viết cũ
+                    <span class="material-icons-round text-sm">expand_more</span>
+                </button>
+            </div>
+            
+            <div id="noResults" class="hidden text-center text-subtext-light dark:text-subtext-dark mt-10">
+                Không tìm thấy bài viết nào phù hợp.
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="relative z-10 py-8 text-center text-sm text-subtext-light dark:text-subtext-dark border-t border-border-light dark:border-border-dark mt-auto bg-card-light/50 dark:bg-card-dark/50 backdrop-blur-sm">
+        <p>© 2025 Hồ Thái Phong.</p>
+    </footer>
+
+    <script>
+        
+        const themeBtn = document.querySelector("#theme-toggle");
+        const html = document.querySelector("html");
+        const mobileBtn = document.querySelector("#mobile-menu-btn");
+        const mobileMenu = document.querySelector("#mobile-menu");
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+        
+        themeBtn.addEventListener("click", () => {
+            html.classList.toggle("dark");
+            localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+        });
+
+        if(mobileBtn && mobileMenu){
+            mobileBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
+        }
+
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const itemsPerLoad = 5;
+            let visibleCount = 5;
+            const allItems = document.querySelectorAll('.post-item');
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            const loadMoreContainer = document.getElementById('loadMoreContainer');
+            const searchInput = document.getElementById('searchInput');
+            const noResults = document.getElementById('noResults');
+
+            
+            function renderList() {
+                
+                allItems.forEach(item => item.style.display = 'none');
+
+                
+                let count = 0;
+                allItems.forEach((item, index) => {
+                    if (index < visibleCount) {
+                        item.style.display = 'block'; 
+                        
+                        item.style.animationDelay = `${(index % 5) * 100}ms`;
+                    }
+                });
+
+                
+                if (visibleCount >= allItems.length) {
+                    loadMoreContainer.style.display = 'none';
+                } else {
+                    loadMoreContainer.style.display = 'block';
+                }
+            }
+
+            
+            renderList();
+
+            
+            loadMoreBtn.addEventListener('click', function() {
+                visibleCount += itemsPerLoad;
+                renderList();
+            });
+
+            
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const keyword = this.value.toLowerCase().trim();
+                    
+                    if (keyword === '') {
+                        
+                        visibleCount = 5; 
+                        renderList();
+                        noResults.classList.add('hidden');
+                        return;
+                    }
+
+                    
+                    let matchCount = 0;
+                    allItems.forEach(function(item) {
+                        const title = item.querySelector('.post-title').innerText.toLowerCase();
+                        const summary = item.querySelector('.post-summary').innerText.toLowerCase();
+                        
+                        if (title.includes(keyword) || summary.includes(keyword)) {
+                            item.style.display = 'block';
+                            item.style.animationDelay = '0ms'; 
+                            matchCount++;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+                    
+                    loadMoreContainer.style.display = 'none';
+
+                    
+                    if (matchCount === 0) {
+                        noResults.classList.remove('hidden');
+                    } else {
+                        noResults.classList.add('hidden');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

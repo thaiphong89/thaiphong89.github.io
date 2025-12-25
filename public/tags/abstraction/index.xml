@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Abstraction on Blog Cá Nhân </title>
+    <link>https://thaiphong-blog.vercel.app/tags/abstraction/</link>
+    <description>Recent content in Abstraction on Blog Cá Nhân </description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Tue, 14 Jan 2025 08:00:00 +0700</lastBuildDate>
+    <atom:link href="https://thaiphong-blog.vercel.app/tags/abstraction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java OOP Phần 4: Tư Duy Của Kiến Trúc Sư (Abstraction)</title>
+      <link>https://thaiphong-blog.vercel.app/posts/tru_tuong_oop/</link>
+      <pubDate>Tue, 14 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong-blog.vercel.app/posts/tru_tuong_oop/</guid>
+      <description>Để lái xe hơi, bạn có cần biết động cơ đốt trong hoạt động ra sao không? Không. Bạn chỉ cần biết Vô-lăng và Chân ga. Đó chính là sự Trừu tượng hóa.</description>
+    </item>
+  </channel>
+</rss>
