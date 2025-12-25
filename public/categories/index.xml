@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on Blog Cá Nhân </title>
-    <link>https://thaiphong-blog.vercel.app/categories/</link>
+    <link>https://thaiphong89.vercel.app/categories/</link>
     <description>Recent content in Categories on Blog Cá Nhân </description>
     <generator>Hugo -- 0.152.2</generator>
     <language>vi</language>
     <lastBuildDate>Wed, 15 Jan 2025 08:00:00 +0700</lastBuildDate>
-    <atom:link href="https://thaiphong-blog.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://thaiphong89.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lập Trình</title>
-      <link>https://thaiphong-blog.vercel.app/categories/l%E1%BA%ADp-tr%C3%ACnh/</link>
+      <link>https://thaiphong89.vercel.app/categories/l%E1%BA%ADp-tr%C3%ACnh/</link>
       <pubDate>Wed, 15 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong-blog.vercel.app/categories/l%E1%BA%ADp-tr%C3%ACnh/</guid>
+      <guid>https://thaiphong89.vercel.app/categories/l%E1%BA%ADp-tr%C3%ACnh/</guid>
       <description></description>
     </item>
     <item>
       <title>Lý Thuyết</title>
-      <link>https://thaiphong-blog.vercel.app/categories/l%C3%BD-thuy%E1%BA%BFt/</link>
+      <link>https://thaiphong89.vercel.app/categories/l%C3%BD-thuy%E1%BA%BFt/</link>
       <pubDate>Wed, 15 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong-blog.vercel.app/categories/l%C3%BD-thuy%E1%BA%BFt/</guid>
+      <guid>https://thaiphong89.vercel.app/categories/l%C3%BD-thuy%E1%BA%BFt/</guid>
       <description></description>
     </item>
   </channel>

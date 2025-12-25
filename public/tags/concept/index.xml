@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Concept on Blog Cá Nhân </title>
-    <link>https://thaiphong-blog.vercel.app/tags/concept/</link>
+    <link>https://thaiphong89.vercel.app/tags/concept/</link>
     <description>Recent content in Concept on Blog Cá Nhân </description>
     <generator>Hugo -- 0.152.2</generator>
     <language>vi</language>
     <lastBuildDate>Wed, 15 Jan 2025 08:00:00 +0700</lastBuildDate>
-    <atom:link href="https://thaiphong-blog.vercel.app/tags/concept/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://thaiphong89.vercel.app/tags/concept/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lịch sử &amp; Tầm quan trọng của OOP: Tại sao nó thay đổi thế giới?</title>
-      <link>https://thaiphong-blog.vercel.app/posts/java_oop/</link>
+      <link>https://thaiphong89.vercel.app/posts/java_oop/</link>
       <pubDate>Wed, 15 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong-blog.vercel.app/posts/java_oop/</guid>
+      <guid>https://thaiphong89.vercel.app/posts/java_oop/</guid>
       <description>Tại sao chúng ta không cứ viết code theo kiểu cũ cho nhanh mà phải dùng Class và Object? Cùng tìm hiểu nguồn gốc và triết lý của OOP.</description>
     </item>
   </channel>
