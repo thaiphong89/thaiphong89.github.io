@@ -97,7 +97,7 @@
         <header class="mb-10 text-center sm:text-left border-b border-slate-200 dark:border-slate-800 pb-8">
             <h1 class="text-3xl sm:text-5xl font-bold text-slate-900 dark:text-white font-display mb-4">Hồ sơ năng lực</h1>
             
-            <p class="text-lg text-slate-600 dark:text-slate-400">Tổng hợp kỹ năng và bộ sưu tập chứng chỉ chuyên môn.</p>
+            <p class="text-lg text-slate-600 dark:text-slate-400">Hồ sơ kinh nghiệm làm việc và bộ sưu tập chứng chỉ chuyên môn.</p>
             
         </header>
 
@@ -107,15 +107,53 @@
                         prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-200 dark:prose-img:border-slate-700">
             <div class="mb-12">
     <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
-        <i class='bx bxs-user-detail text-blue-600'></i> Giới thiệu
+        Giới thiệu
     </h2>
-    <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
-        Xin chào, tôi là <strong>Hồ Thái Phong</strong>. Tôi tập trung phát triển sự nghiệp trong lĩnh vực <strong>Công nghệ thông tin</strong> với sự kết hợp giữa tư duy lập trình (Java/JS) và kiến thức nền tảng về Hạ tầng mạng & Bảo mật.
+    <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg mb-6">
+        Xin chào, tôi là <strong>Hồ Thái Phong</strong>. Tôi là sinh viên năm cuối chuyên ngành Kỹ thuật Dữ liệu & Phần mềm tại HUTECH. Tôi có đam mê lớn với việc xây dựng các luồng dữ liệu và khai phá dữ liệu để hỗ trợ ra quyết định kinh doanh.
     </p>
 </div>
+<hr class="border-slate-200 dark:border-slate-800 my-8">
+<div class="mb-12">
+    <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">
+        Dự án & Kinh nghiệm
+    </h2>
+<div class="space-y-8">
+        <div class="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-slate-200 dark:border-slate-800">
+            <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400 mb-1">Ứng dụng Quản lý Tài chính Cá nhân</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4 font-mono">Công nghệ: Flutter, SQLite, Chart.js, Python</p>
+            <ul class="list-disc list-outside ml-5 text-slate-700 dark:text-slate-300 space-y-2">
+                <li>Xây dựng module thu thập dữ liệu chi tiêu hàng ngày của người dùng và lưu trữ cục bộ.</li>
+                <li>Thực hiện trích xuất và tổng hợp dữ liệu (Aggregation) để trực quan hóa thói quen chi tiêu.</li>
+                <li>Phát triển thuật toán dự báo đơn giản: Cảnh báo người dùng khi xu hướng chi tiêu vượt quá ngân sách dựa trên dữ liệu lịch sử.</li>
+            </ul>
+        </div>
+<div class="bg-slate-50 dark:bg-slate-900/50 p-6 rounded-xl border border-slate-200 dark:border-slate-800">
+            <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400 mb-1">Nền tảng Kết nối Thể thao (Sports Connect)</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400 mb-4 font-mono">Công nghệ: Flutter, Firebase, Chart.js, Python</p>
+            <ul class="list-disc list-outside ml-5 text-slate-700 dark:text-slate-300 space-y-2">
+                <li>Thiết kế luồng dữ liệu xử lý thông tin vị trí (Geolocation) và hồ sơ người dùng.</li>
+                <li>Xây dựng thuật toán gợi ý tìm đồng đội dựa trên vị trí, kỹ năng và môn thể thao.</li>
+                <li>Tối ưu hóa truy vấn tìm kiếm trong bán kính 5km, giảm thời gian phản hồi API xuống dưới 200ms.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<hr class="border-slate-200 dark:border-slate-800 my-8">
+<div class="mb-12">
+    <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">
+        Học vấn
+    </h2>
+    <div>
+        <h3 class="text-xl font-bold text-slate-800 dark:text-slate-200">Đại học Công nghệ TP.HCM (HUTECH)</h3>
+        <p class="text-slate-600 dark:text-slate-400">Chuyên ngành: Công nghệ Thông tin / Kỹ sư Dữ liệu</p>
+        <p class="text-sm text-slate-500 mt-1">2022 - 2026</p>
+    </div>
+</div>
+<hr class="border-slate-200 dark:border-slate-800 my-8">
 <div class="mb-12">
     <div class="flex items-center gap-3 mb-6">
-        <span class="text-3xl">🏆</span>
+        <span class="text-3xl"></span>
         <h2 class="text-2xl font-bold text-slate-900 dark:text-white">
             Bộ Sưu Tập Chứng Chỉ
         </h2>
@@ -187,6 +225,14 @@
         </div>
 </div>
 <hr class="border-slate-200 dark:border-slate-800 my-8">
+<div class="text-center mb-8 space-y-3">
+    <a href="/images/cv.pdf" target="_blank" download class="inline-flex items-center gap-2 px-6 py-3 border border-slate-400 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 rounded-lg font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors mb-1">
+        <i class='bx bx-download'></i> Tải CV PDF
+    </a>
+    <a href="/images/cv.pdf" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 border border-slate-400 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 rounded-lg font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+        <i class='bx bx-show'></i> Xem trước CV
+    </a>
+</div>
 <div class="text-center">
     <a href="/contact/" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-full font-bold hover:opacity-90 transition-opacity">
         <i class='bx bx-envelope'></i> Liên hệ ngay
