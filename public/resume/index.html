@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Hồ sơ năng lực - Hồ Thái Phong</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    
+    <script>
+        tailwind.config = {
+            darkMode: "class", 
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#334155", "primary-hover": "#0f172a",
+                        "background-light": "#ffffff", "background-dark": "#0f172a", 
+                        "text-light": "#334155", "text-dark": "#e2e8f0"
+                    }, 
+                    fontFamily: { display: "Manrope", body: ["Inter", "sans-serif"] }
+                }
+            }
+        };
+    </script>
+
+    <meta name="view-transition" content="same-origin" />
+    <style> 
+         
+        html { scrollbar-gutter: stable; }
+
+         
+        body { font-family: 'Inter', sans-serif; }
+
+        @view-transition { navigation: auto; }
+        
+        ::view-transition-old(root) { animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both fade-out; }
+        ::view-transition-new(root) { animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both fade-in; }
+        
+        @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fade-out { from { opacity: 1; } to { opacity: 0; } }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-slate-200 dark:selection:bg-slate-700">
+
+<nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/90 dark:bg-background-dark/90 border-b border-slate-100 dark:border-slate-800 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <div class="flex items-center gap-4">
+                <a class="text-xl font-bold tracking-tight text-slate-900 dark:text-white group flex items-center gap-2" href="/">
+                    <span class="font-display">Hồ Thái Phong</span>
+                </a>
+                <div class="h-4 w-px bg-slate-300 dark:bg-slate-700 hidden sm:block"></div>
+               
+            </div>
+            
+           <div class="hidden md:flex items-center space-x-1">
+                <a href="/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors  text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50 ">Home</a>
+                <a href="/about/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors  text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50 ">About</a>
+                <a href="/resume/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors  bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white ">Resume</a>
+                <a href="/posts/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors  text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50 ">Blog</a>
+                <a href="/contact/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors  text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50 ">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <button class="p-2 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-white dark:hover:bg-slate-800 transition-all focus:outline-none" id="theme-toggle">
+                    <svg class="hidden dark:block w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    <svg class="block dark:hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </button>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none">
+                        <svg class="w-6 h-6 text-slate-600 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Home</a>
+            <a href="/about/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">About</a>
+            <a href="/resume/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Resume</a>
+            <a href="/posts/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Blog</a>
+            <a href="/contact/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<main class="flex-grow py-12 px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-10 text-center sm:text-left border-b border-slate-200 dark:border-slate-800 pb-8">
+            <h1 class="text-3xl sm:text-5xl font-bold text-slate-900 dark:text-white font-display mb-4">Hồ sơ năng lực</h1>
+            
+            <p class="text-lg text-slate-600 dark:text-slate-400">Tổng hợp kỹ năng và bộ sưu tập chứng chỉ chuyên môn.</p>
+            
+        </header>
+
+        <article class="prose prose-slate dark:prose-invert max-w-none 
+                        prose-headings:font-display prose-headings:font-bold 
+                        prose-a:text-blue-600 hover:prose-a:text-blue-500
+                        prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-200 dark:prose-img:border-slate-700">
+            <div class="mb-12">
+    <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+        <i class='bx bxs-user-detail text-blue-600'></i> Giới thiệu
+    </h2>
+    <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
+        Xin chào, tôi là <strong>Hồ Thái Phong</strong>. Tôi tập trung phát triển sự nghiệp trong lĩnh vực <strong>Công nghệ thông tin</strong> với sự kết hợp giữa tư duy lập trình (Java/JS) và kiến thức nền tảng về Hạ tầng mạng & Bảo mật.
+    </p>
+</div>
+<div class="mb-12">
+    <div class="flex items-center gap-3 mb-6">
+        <span class="text-3xl">🏆</span>
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white">
+            Bộ Sưu Tập Chứng Chỉ
+        </h2>
+    </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="group relative bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
+            <div class="aspect-video w-full overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
+               <img data-zoomable src="/images/ccna.png" alt="Cybersecurity" class="h-full w-full object-contain p-4 transition-transform duration-300 group-hover:scale-105 cursor-zoom-in">
+                <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-bold px-2 py-1 rounded">01</div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <h3 class="text-lg font-bold text-blue-600 dark:text-blue-400 mb-2">Introduction to Cybersecurity</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mb-4 flex-grow">
+                    Kiến thức nền tảng về an toàn thông tin, nhận biết mối đe dọa, lỗ hổng bảo mật và biện pháp bảo vệ dữ liệu.
+                </p>
+                <a href="https://www.credly.com/badges/e6c363dc-b4da-48b3-8036-a837ef5dc036/public_url" target="_blank" class="inline-flex justify-center items-center gap-2 w-full py-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-medium hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-colors">
+                    <span>Xác thực Credly</span>
+                    <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        </div>
+<div class="group relative bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
+            <div class="aspect-video w-full overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
+                <img data-zoomable src="/images/Networking_Basics.jpg" alt="Networking" class="h-full w-full object-contain p-4 transition-transform duration-300 group-hover:scale-105 cursor-zoom-in">
+                <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-bold px-2 py-1 rounded">02</div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <h3 class="text-lg font-bold text-green-600 dark:text-green-400 mb-2">Networking Basics</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mb-4 flex-grow">
+                    Kỹ năng nền tảng hạ tầng mạng: IPv4/IPv6, Ethernet, cấu hình Router Wifi và khắc phục sự cố kết nối.
+                </p>
+                <a href="https://www.credly.com/badges/21c7bead-1979-4add-b0e8-73c55e7c38fe/public_url" target="_blank" class="inline-flex justify-center items-center gap-2 w-full py-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-medium hover:bg-green-600 hover:text-white dark:hover:bg-green-600 transition-colors">
+                    <span>Xác thực Credly</span>
+                    <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        </div>
+<div class="group relative bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
+            <div class="aspect-video w-full overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
+                <img data-zoomable src="/images/JavaScript1.jpg" alt="JS1" class="h-full w-full object-contain p-4 transition-transform duration-300 group-hover:scale-105 cursor-zoom-in">
+                <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-bold px-2 py-1 rounded">03</div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <h3 class="text-lg font-bold text-yellow-600 dark:text-yellow-400 mb-2">JavaScript Essentials 1</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mb-4 flex-grow">
+                    Lập trình căn bản: Cú pháp cốt lõi, biến, vòng lặp, hàm và tư duy thuật toán giải quyết vấn đề.
+                </p>
+                <a href="https://www.credly.com/badges/deb72ce2-9163-4e67-bab4-0dd8ab60de5b/public_url" target="_blank" class="inline-flex justify-center items-center gap-2 w-full py-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-medium hover:bg-yellow-600 hover:text-white dark:hover:bg-yellow-600 transition-colors">
+                    <span>Xác thực Credly</span>
+                    <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        </div>
+<div class="group relative bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-lg transition-all overflow-hidden flex flex-col">
+            <div class="aspect-video w-full overflow-hidden bg-slate-100 dark:bg-slate-800 relative">
+                <img data-zoomable src="/images/JavaScript2.jpg" alt="JS2" class="h-full w-full object-contain p-4 transition-transform duration-300 group-hover:scale-105 cursor-zoom-in">
+                <div class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-bold px-2 py-1 rounded">04</div>
+            </div>
+            <div class="p-5 flex flex-col flex-grow">
+                <h3 class="text-lg font-bold text-orange-600 dark:text-orange-400 mb-2">JavaScript Essentials 2</h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400 mb-4 flex-grow">
+                    Lập trình nâng cao: Hướng đối tượng (OOP), bất đồng bộ (Async), JSON và Regex.
+                </p>
+                <a href="https://www.credly.com/badges/deb72ce2-9163-4e67-bab4-0dd8ab60de5b/public_url" target="_blank" class="inline-flex justify-center items-center gap-2 w-full py-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-medium hover:bg-orange-600 hover:text-white dark:hover:bg-orange-600 transition-colors">
+                    <span>Xác thực Credly</span>
+                    <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        </div>
+</div>
+<hr class="border-slate-200 dark:border-slate-800 my-8">
+<div class="text-center">
+    <a href="/contact/" class="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-full font-bold hover:opacity-90 transition-opacity">
+        <i class='bx bx-envelope'></i> Liên hệ ngay
+    </a>
+</div>
+        </article>
+
+    </div>
+</main>
+
+<footer class="py-8 text-center text-sm text-slate-400 dark:text-slate-500 border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-background-dark transition-colors duration-300 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p>© 2025 Hồ Thái Phong. All rights reserved.</p>
+        <p class="text-xs">Powered by Hugo & PaperMod</p>
+    </div>
+</footer>
+
+<script>
+    const themeBtn = document.querySelector("#theme-toggle");
+    const html = document.querySelector("html");
+    const mobileBtn = document.querySelector("#mobile-menu-btn");
+    const mobileMenu = document.querySelector("#mobile-menu");
+
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        html.classList.add('dark');
+    } else {
+        html.classList.remove('dark');
+    }
+    themeBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+    });
+
+    if(mobileBtn && mobileMenu){
+        mobileBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+<script>
+    mediumZoom('[data-zoomable]', {
+        margin: 24,
+        background: localStorage.theme === 'dark' ? '#0f172a' : '#ffffff',
+        scrollOffset: 0,
+    });
+</script>
+</body>
+</html>

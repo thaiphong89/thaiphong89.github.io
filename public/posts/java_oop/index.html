@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Lịch sử &amp; Tầm quan trọng của OOP: Tại sao nó thay đổi thế giới? - Blog Hồ Thái Phong</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class", 
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#334155", "primary-hover": "#0f172a",
+                        "background-light": "#ffffff", "background-dark": "#0f172a", 
+                        "text-light": "#334155", "text-dark": "#e2e8f0"
+                    }, 
+                    fontFamily: { display: "Manrope", body: ["Inter", "sans-serif"] }
+                }
+            }
+        };
+    </script>
+    <style> 
+         
+        html { scrollbar-gutter: stable; }
+
+         
+        body { font-family: 'Inter', sans-serif; }
+        
+        @view-transition { navigation: auto; }
+        
+        ::view-transition-old(root) { animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both fade-out; }
+        ::view-transition-new(root) { animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both fade-in; }
+
+        @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fade-out { from { opacity: 1; } to { opacity: 0; } }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-slate-200 dark:selection:bg-slate-700">
+
+<nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/90 dark:bg-background-dark/90 border-b border-slate-100 dark:border-slate-800 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <div class="flex items-center gap-4">
+                <a class="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2" href="/">
+                    <span class="font-display">Hồ Thái Phong</span>
+                </a>
+                <div class="h-4 w-px bg-slate-300 dark:bg-slate-700 hidden sm:block"></div>
+              
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-1">
+                <a href="/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50">Home</a>
+                <a href="/about/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50">About</a>
+                <a href="/resume/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50">Resume</a>
+                <a href="/posts/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white">Blog</a>
+                <a href="/contact/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <button class="p-2 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-white focus:outline-none" id="theme-toggle">
+                    <svg class="hidden dark:block w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    <svg class="block dark:hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </button>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none">
+                        <svg class="w-6 h-6 text-slate-600 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Home</a>
+            <a href="/about/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">About</a>
+            <a href="/resume/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Resume</a>
+            <a href="/posts/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-900 dark:text-white bg-slate-50 dark:bg-slate-800">Blog</a>
+            <a href="/contact/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<main class="flex-grow py-12 px-4 sm:px-6">
+    <div class="max-w-3xl mx-auto">
+        <div class="mb-8">
+            <a href="/posts/" class="inline-flex items-center gap-2 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group">
+                <i class='bx bx-left-arrow-alt text-2xl group-hover:-translate-x-1 transition-transform'></i>
+                Quay lại danh sách Blog
+            </a>
+        </div>
+
+        <header class="mb-8 pb-8 border-b border-slate-200 dark:border-slate-800">
+            <h1 class="text-3xl sm:text-5xl font-bold text-slate-900 dark:text-white font-display mb-6 leading-tight">Lịch sử &amp; Tầm quan trọng của OOP: Tại sao nó thay đổi thế giới?</h1>
+            <div class="flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+                <div class="flex items-center gap-2">
+                    <i class='bx bx-calendar'></i>
+                    <time>15/01/2025</time>
+                </div>
+                <span class="hidden sm:inline">•</span>
+                <div class="flex items-center gap-2">
+                    <i class='bx bx-time-five'></i>
+                    <span>5 phút đọc</span>
+                </div>
+            </div>
+        </header>
+
+        
+        <figure class="mb-10 rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="Old microchip technology" class="w-full object-cover max-h-[500px]">
+            
+            <figcaption class="text-center text-sm text-slate-500 dark:text-slate-400 py-3 bg-slate-50 dark:bg-slate-900/50 italic border-t border-slate-100 dark:border-slate-800">
+                OOP là bước tiến hóa tất yếu để xử lý sự phức tạp của phần mềm.
+            </figcaption>
+            
+        </figure>
+        
+
+        <article class="prose prose-lg prose-slate dark:prose-invert max-w-none 
+                        prose-headings:font-display prose-headings:font-bold prose-headings:text-slate-900 dark:prose-headings:text-white
+                        prose-a:text-blue-600 dark:prose-a:text-blue-400 hover:prose-a:underline
+                        prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-200 dark:prose-img:border-slate-700
+                        prose-pre:bg-slate-800 prose-pre:border prose-pre:border-slate-700">
+            <p>Nếu bạn nhìn vào các đoạn code Java hiện đại ngày nay, bạn sẽ thấy sự xuất hiện dày đặc của <code>class</code>, <code>constructor</code>, hay <code>extends</code>. Nhưng đã bao giờ bạn tự hỏi: <strong>Tại sao chúng ta lại cần những thứ này?</strong> Tại sao không cứ viết hàm (function) và biến (variable) rời rạc như ngày xưa cho nhanh?</p>
+<p>Câu trả lời nằm ở lịch sử hình thành và triết lý cốt lõi của <strong>Lập trình hướng đối tượng (OOP - Object Oriented Programming)</strong>.</p>
+<h2 id="1-thời-kỳ-hỗn-mang-trước-oop">1. Thời kỳ &ldquo;Hỗn mang&rdquo; trước OOP</h2>
+<p>Hãy tưởng tượng những năm 1960-1970. Khi đó, lập trình chủ yếu đi theo hướng <strong>Thủ tục (Procedural Programming)</strong>.
+Tư duy lúc ấy rất đơn giản: &ldquo;Chương trình là một danh sách các việc cần làm&rdquo;.</p>
+<ul>
+<li>Bước 1: Lấy dữ liệu A.</li>
+<li>Bước 2: Tính toán B.</li>
+<li>Bước 3: In kết quả C.</li>
+</ul>
+<p>Cách này ổn với các chương trình nhỏ. Nhưng khi phần mềm phình to lên hàng triệu dòng code, rắc rối nảy sinh. Dữ liệu bị vứt lung tung khắp nơi (global variables). Một hàm ở trang A thay đổi dữ liệu, vô tình làm hỏng hàm ở trang B. Đây gọi là thảm họa <strong>&ldquo;Spaghetti Code&rdquo;</strong> (Code rối như mì Ý).</p>
+<p>Các lập trình viên cần một cách tổ chức tốt hơn. Họ cần một cách để <strong>gom nhóm</strong> dữ liệu và hành động lại với nhau.</p>
+<h2 id="2-sự-ra-đời-của-oop-mô-phỏng-thế-giới-thực">2. Sự ra đời của OOP: Mô phỏng thế giới thực</h2>
+<p>Vào thập niên 1960, tại Na Uy, hai nhà khoa học máy tính là <strong>Ole-Johan Dahl</strong> và <strong>Kristen Nygaard</strong> đã tạo ra ngôn ngữ <strong>Simula 67</strong>. Mục đích ban đầu không phải để làm web hay app, mà để <em>mô phỏng các vụ nổ tàu hoặc hệ thống phức tạp</em>.</p>
+<p>Họ nhận ra rằng: Để mô phỏng thế giới thực, ta không thể chỉ viết các dòng lệnh chạy từ trên xuống dưới. Ta cần tạo ra các <strong>Đối tượng (Objects)</strong>.</p>
+<ul>
+<li>Một con tàu là một đối tượng (có tốc độ, trọng tải).</li>
+<li>Một cơn bão là một đối tượng (có sức gió, hướng đi).</li>
+<li>Khi bão gặp tàu, chúng <strong>tương tác</strong> với nhau.</li>
+</ul>
+<p>Đến thập niên 1970, <strong>Alan Kay</strong> tại Xerox PARC đã phát triển ngôn ngữ <strong>Smalltalk</strong> và chính thức đặt tên cho tư duy này là &ldquo;Object-Oriented Programming&rdquo;. Sau đó, C++ và Java ra đời, đưa OOP trở thành tiêu chuẩn vàng của ngành phần mềm.</p>
+<h2 id="3-tại-sao-oop-lại-quan-trọng-nhìn-từ-code-của-bạn">3. Tại sao OOP lại quan trọng? (Nhìn từ code của bạn)</h2>
+<p>Dựa trên các ví dụ code mà chúng ta thường thấy, có 3 lý do khiến OOP trở thành xương sống của phần mềm hiện đại:</p>
+<h3 id="a-tư-duy-bản-thiết-kế-class--object">A. Tư duy &ldquo;Bản thiết kế&rdquo; (Class &amp; Object)</h3>
+<p>Thay vì tạo ra hàng tá biến rời rạc như <code>tenXe1</code>, <code>namSanXuat1</code>, <code>tenXe2</code>, <code>namSanXuat2</code>&hellip; OOP cho phép ta tạo ra một &ldquo;khuôn mẫu&rdquo;.</p>
+<blockquote>
+<p><strong>Ví dụ:</strong> <code>class XeHoi</code> chính là cái khuôn đó.</p>
+<ul>
+<li><strong>Lợi ích:</strong> Bạn định nghĩa cấu trúc một lần (gồm tên xe, năm sản xuất, hành động chạy), và có thể tạo ra hàng nghìn chiếc xe khác nhau (<code>new XeHoi</code>) mà không bao giờ sợ thiếu dữ liệu hay sai cấu trúc.</li>
+</ul>
+</blockquote>
+<h3 id="b-sự-an-toàn-dữ-liệu-encapsulation">B. Sự an toàn dữ liệu (Encapsulation)</h3>
+<p>Trong thế giới thực, bạn không thể tự ý thò tay vào ví tiền của người khác để lấy tiền. Bạn phải &ldquo;xin&rdquo; hoặc giao dịch. Trong lập trình thủ tục cũ, dữ liệu thường bị &ldquo;hớ hênh&rdquo;, ai cũng sửa được.</p>
+<blockquote>
+<p><strong>Ví dụ:</strong> Class <code>TaiKhoanNganHang</code> sử dụng <code>private</code> cho số dư.</p>
+<ul>
+<li><strong>Lợi ích:</strong> Đây là tính <strong>Đóng gói</strong>. Nó ngăn chặn việc một lập trình viên khác vô tình gán <code>soDu = -1000000</code>. Họ bắt buộc phải dùng hàm <code>napTien()</code> - nơi bạn đã đặt các chốt kiểm soát an ninh (validation). OOP giúp code an toàn hơn và ít lỗi ngớ ngẩn hơn.</li>
+</ul>
+</blockquote>
+<h3 id="c-khả-năng-tái-sử-dụng-và-mở-rộng-inheritance">C. Khả năng tái sử dụng và mở rộng (Inheritance)</h3>
+<p>Lập trình viên rất ghét việc lặp lại (Don&rsquo;t Repeat Yourself - DRY). Nếu bạn đã mô tả một con Vật (<code>Animal</code>) biết thở, biết ăn, bạn không muốn viết lại những dòng code đó khi tạo ra con Chó (<code>Dog</code>).</p>
+<blockquote>
+<p><strong>Ví dụ:</strong> <code>class Dog extends Animal</code>.</p>
+<ul>
+<li><strong>Lợi ích:</strong> Chỉ cần từ khóa <code>extends</code>, Chó lập tức sở hữu mọi thứ của Vật mà không tốn một dòng code nào. Đây là tính <strong>Kế thừa</strong>. Nó giúp tiết kiệm hàng ngàn giờ làm việc khi xây dựng các hệ thống lớn, nơi các đối tượng có mối quan hệ cha-con phức tạp.</li>
+</ul>
+</blockquote>
+<h2 id="4-tổng-kết">4. Tổng kết</h2>
+<p>OOP không chỉ là một cách viết code, nó là một <strong>tư duy quản lý</strong>.</p>
+<ol>
+<li>Nó giúp chia nhỏ một bài toán khổng lồ thành các mảnh ghép nhỏ (Object) dễ quản lý.</li>
+<li>Nó mô phỏng cách con người nhìn thế giới, giúp code dễ đọc và dễ hiểu hơn.</li>
+<li>Nó bảo vệ dữ liệu và giúp việc bảo trì, nâng cấp phần mềm trở nên khả thi.</li>
+</ol>
+<p>Dù ngày nay có nhiều mô hình mới như Functional Programming (Lập trình hàm) nổi lên, nhưng với những hệ thống lớn và phức tạp, OOP vẫn là một tượng đài không thể thay thế. Hiểu về lịch sử và bản chất của nó sẽ giúp bạn không chỉ là một người &ldquo;gõ code&rdquo; (coder) mà là một &ldquo;kiến trúc sư phần mềm&rdquo; (software engineer) thực thụ.</p>
+
+        </article>
+    </div>
+</main>
+
+<footer class="py-8 text-center text-sm text-slate-400 dark:text-slate-500 border-t border-slate-100 dark:border-slate-800 mt-auto">
+    <p>© 2025 Hồ Thái Phong.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+<script>
+    const themeBtn = document.querySelector("#theme-toggle");
+    const html = document.querySelector("html");
+    const mobileBtn = document.querySelector("#mobile-menu-btn");
+    const mobileMenu = document.querySelector("#mobile-menu");
+
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        html.classList.add('dark');
+    } else {
+        html.classList.remove('dark');
+    }
+    
+    themeBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+        zoom.update({ background: html.classList.contains('dark') ? '#0f172a' : '#ffffff' });
+    });
+
+    if(mobileBtn && mobileMenu){
+        mobileBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    }
+
+    const zoom = mediumZoom('.prose img, figure img', {
+        margin: 24,
+        background: localStorage.theme === 'dark' ? '#0f172a' : '#ffffff',
+        scrollOffset: 0,
+    });
+</script>
+</body>
+</html>

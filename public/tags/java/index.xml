@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Java on Blog Cá Nhân </title>
+    <link>http://localhost:1313/tags/java/</link>
+    <description>Recent content in Java on Blog Cá Nhân </description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Tue, 14 Jan 2025 08:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java OOP Phần 4: Tư Duy Của Kiến Trúc Sư (Abstraction)</title>
+      <link>http://localhost:1313/posts/tru_tuong_oop/</link>
+      <pubDate>Tue, 14 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/tru_tuong_oop/</guid>
+      <description>Để lái xe hơi, bạn có cần biết động cơ đốt trong hoạt động ra sao không? Không. Bạn chỉ cần biết Vô-lăng và Chân ga. Đó chính là sự Trừu tượng hóa.</description>
+    </item>
+    <item>
+      <title>Java OOP Phần 3: Sự Linh Hoạt Của Đa Hình (Polymorphism)</title>
+      <link>http://localhost:1313/posts/da_hinh_oop/</link>
+      <pubDate>Mon, 13 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/da_hinh_oop/</guid>
+      <description>Làm thế nào để quản lý một sở thú hỗn loạn với hàng trăm loài vật khác nhau chỉ bằng một dòng lệnh? Đa hình chính là câu trả lời.</description>
+    </item>
+    <item>
+      <title>Java OOP Phần 2: Đừng Lặp Lại Chính Mình (Inheritance)</title>
+      <link>http://localhost:1313/posts/ke_thua_oop/</link>
+      <pubDate>Sun, 12 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/ke_thua_oop/</guid>
+      <description>Lập trình viên giỏi là người biết &amp;rsquo;lười&amp;rsquo; đúng cách. Tại sao phải viết lại những đoạn code giống hệt nhau? Hãy để tính Kế thừa giúp bạn.</description>
+    </item>
+    <item>
+      <title>Java OOP Phần 1: Tại Sao Phải &#39;Giấu&#39; Dữ Liệu? (Encapsulation)</title>
+      <link>http://localhost:1313/posts/dong_goi_oop/</link>
+      <pubDate>Sat, 11 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/dong_goi_oop/</guid>
+      <description>Bạn có dám để ví tiền của mình giữa đường cho ai cũng có thể lấy? Nếu câu trả lời là không, thì bạn đã hiểu về tính Đóng gói trong lập trình rồi đấy.</description>
+    </item>
+    <item>
+      <title>Java Bài 5: Mảng (Arrays) - Quản Lý Danh Sách</title>
+      <link>http://localhost:1313/posts/java_mang/</link>
+      <pubDate>Mon, 06 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/java_mang/</guid>
+      <description>Làm thế nào để lưu điểm số của 100 sinh viên mà không cần khai báo 100 biến? Mảng chính là câu trả lời.</description>
+    </item>
+    <item>
+      <title>Java Bài 4: Vòng Lặp For và While</title>
+      <link>http://localhost:1313/posts/java_vong_lap/</link>
+      <pubDate>Sun, 05 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/java_vong_lap/</guid>
+      <description>Đừng lặp lại code thủ công! Hãy để máy tính làm việc nặng nhọc với vòng lặp For và While.</description>
+    </item>
+    <item>
+      <title>Java Bài 3: Câu Lệnh Điều Kiện If-Else</title>
+      <link>http://localhost:1313/posts/java-cau-lenh-if-else/</link>
+      <pubDate>Sat, 04 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/java-cau-lenh-if-else/</guid>
+      <description>Làm sao để chương trình thông minh hơn? Hãy dạy nó cách đưa ra quyết định dựa trên các điều kiện.</description>
+    </item>
+    <item>
+      <title>Java Bài 2: Biến và Các Kiểu Dữ Liệu Cơ Bản</title>
+      <link>http://localhost:1313/posts/java_bien_du_lieu/</link>
+      <pubDate>Fri, 03 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/java_bien_du_lieu/</guid>
+      <description>Tìm hiểu về các hộp chứa dữ liệu trong Java: Biến là gì? Có những kiểu dữ liệu nào quan trọng?</description>
+    </item>
+    <item>
+      <title>Làm quen với Java: Hướng dẫn cho người mới bắt đầu</title>
+      <link>http://localhost:1313/posts/hello/</link>
+      <pubDate>Thu, 02 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/hello/</guid>
+      <description>Khám phá ngôn ngữ lập trình Java - &amp;lsquo;Viết một lần, chạy mọi nơi&amp;rsquo;. Bài viết này sẽ giúp bạn hiểu cú pháp cơ bản và viết chương trình đầu tiên.</description>
+    </item>
+    <item>
+      <title>Làm quen với Java: Hướng dẫn cho người mới bắt đầu</title>
+      <link>http://localhost:1313/posts/java_co_ban/</link>
+      <pubDate>Thu, 02 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/java_co_ban/</guid>
+      <description>Khám phá ngôn ngữ lập trình Java - &amp;lsquo;Viết một lần, chạy mọi nơi&amp;rsquo;. Bài viết này sẽ giúp bạn hiểu cú pháp cơ bản và viết chương trình đầu tiên.</description>
+    </item>
+  </channel>
+</rss>

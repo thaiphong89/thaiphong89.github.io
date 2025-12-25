@@ -1,0 +1,88 @@
+/* Đổi màu tiêu đề bài viết */
+.post-content h1, .post-content h2 {
+    color: #007396; /* Màu xanh Java */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Hiệu ứng khi rê chuột vào link */
+a:hover {
+    color: #d63031;
+    text-decoration: underline;
+}
+/* --- 1. TÙY BIẾN ẢNH ĐẠI DIỆN --- */
+.profile img {
+    border-radius: 50%; /* Biến ảnh vuông thành tròn */
+    border: 3px solid #007396; /* Viền màu xanh Java */
+    box-shadow: 0 0 15px rgba(0, 115, 150, 0.4); /* Hiệu ứng tỏa sáng mờ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt mà */
+}
+
+/* Khi rê chuột vào ảnh thì phóng to nhẹ và sáng hơn */
+.profile img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 115, 150, 0.8);
+}
+
+/* --- 2. TÙY BIẾN TIÊU ĐỀ (TÊN BẠN) --- */
+.profile h1 {
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(45deg, #007396, #f89820); /* Màu Gradient Java (Xanh - Cam) */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+/* --- 3. TÙY BIẾN NÚT BẤM (BUTTONS) --- */
+.button {
+    border-radius: 25px; /* Bo tròn nút bấm */
+    background-color: #2c3e50;
+    color: white;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.button:hover {
+    background-color: #007396; /* Đổi màu khi rê chuột */
+    transform: translateY(-3px); /* Nút nảy lên nhẹ */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* --- 4. TÙY BIẾN DÒNG MÔ TẢ (SUBTITLE) --- */
+.profile .subtitle {
+    font-size: 1.1rem;
+    color: #a5a5a5; /* Màu chữ xám nhẹ */
+    max-width: 600px; /* Giới hạn chiều rộng cho dễ đọc */
+    margin: 0 auto 20px auto; /* Căn giữa */
+    line-height: 1.6;
+}
+/* --- TÙY BIẾN MENU ĐIỀU HƯỚNG --- */
+
+/* 1. Căn chỉnh vị trí menu */
+.header .menu {
+    margin-top: 5px; /* Căn chỉnh cho thẳng hàng với Logo */
+}
+
+/* 2. Kiểu dáng chữ (Giống hình mẫu) */
+.header .menu li a {
+    text-transform: uppercase; /* Bắt buộc viết IN HOA */
+    font-size: 15px; /* Kích thước chữ vừa phải */
+    font-weight: 400; /* Độ đậm nhạt (400 là mảnh, 700 là đậm) */
+    letter-spacing: 1px; /* Khoảng cách giữa các chữ cái cho thoáng */
+    color: #333; /* Màu mặc định là đen xám */
+    padding-left: 15px; /* Khoảng cách giữa các mục menu */
+    padding-right: 15px;
+}
+
+/* 3. Hiệu ứng khi đang ở trang đó (Active) - Màu xanh ngọc */
+/* PaperMod tự động thêm class 'active' vào mục menu tương ứng với trang hiện tại */
+.header .menu li.active a {
+    color: #00cccc; /* Mã màu xanh ngọc giống trong hình */
+    border-bottom: none; /* Bỏ gạch chân mặc định của theme nếu có */
+}
+
+/* 4. Hiệu ứng khi rê chuột vào (Hover) */
+.header .menu li a:hover {
+    color: #00cccc; /* Đổi sang màu xanh ngọc khi rê chuột */
+    text-decoration: none; /* Không gạch chân */
+}

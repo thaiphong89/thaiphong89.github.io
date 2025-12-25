@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Blog Cá Nhân </title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Blog Cá Nhân </description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Wed, 15 Jan 2025 08:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Concept</title>
+      <link>http://localhost:1313/tags/concept/</link>
+      <pubDate>Wed, 15 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/concept/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>History</title>
+      <link>http://localhost:1313/tags/history/</link>
+      <pubDate>Wed, 15 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/history/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OOP</title>
+      <link>http://localhost:1313/tags/oop/</link>
+      <pubDate>Wed, 15 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/oop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming Philosophy</title>
+      <link>http://localhost:1313/tags/programming-philosophy/</link>
+      <pubDate>Wed, 15 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/programming-philosophy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Abstraction</title>
+      <link>http://localhost:1313/tags/abstraction/</link>
+      <pubDate>Tue, 14 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/abstraction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interface</title>
+      <link>http://localhost:1313/tags/interface/</link>
+      <pubDate>Tue, 14 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/interface/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Java</title>
+      <link>http://localhost:1313/tags/java/</link>
+      <pubDate>Tue, 14 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Polymorphism</title>
+      <link>http://localhost:1313/tags/polymorphism/</link>
+      <pubDate>Mon, 13 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/polymorphism/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DRY</title>
+      <link>http://localhost:1313/tags/dry/</link>
+      <pubDate>Sun, 12 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/dry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inheritance</title>
+      <link>http://localhost:1313/tags/inheritance/</link>
+      <pubDate>Sun, 12 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/inheritance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Encapsulation</title>
+      <link>http://localhost:1313/tags/encapsulation/</link>
+      <pubDate>Sat, 11 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/encapsulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Sat, 11 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arrays</title>
+      <link>http://localhost:1313/tags/arrays/</link>
+      <pubDate>Mon, 06 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/arrays/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Structure</title>
+      <link>http://localhost:1313/tags/data-structure/</link>
+      <pubDate>Mon, 06 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/data-structure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Basics</title>
+      <link>http://localhost:1313/tags/basics/</link>
+      <pubDate>Sun, 05 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/basics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loops</title>
+      <link>http://localhost:1313/tags/loops/</link>
+      <pubDate>Sun, 05 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/loops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Control Flow</title>
+      <link>http://localhost:1313/tags/control-flow/</link>
+      <pubDate>Sat, 04 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/control-flow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logic</title>
+      <link>http://localhost:1313/tags/logic/</link>
+      <pubDate>Sat, 04 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/logic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Variables</title>
+      <link>http://localhost:1313/tags/variables/</link>
+      <pubDate>Fri, 03 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/variables/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/tags/programming/</link>
+      <pubDate>Thu, 02 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/tags/tutorial/</link>
+      <pubDate>Thu, 02 Jan 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/tags/tutorial/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

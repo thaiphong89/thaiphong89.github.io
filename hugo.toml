@@ -1,0 +1,111 @@
+baseURL = 'https://thaiphong89.github.io/'
+languageCode = 'vi'
+title = 'Blog Cá Nhân '
+theme = "PaperMod"
+
+# Cấu hình sitemap cho SEO (sau này cần)
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
+# Cấu hình Param của Theme PaperMod
+[params]
+  defaultTheme = "auto" # Tự động theo giao diện sáng/tối của máy
+  # Hiển thị nút copy ở các đoạn code
+  ShowCodeCopyButtons = true 
+  # Hiển thị mục lục bài viết
+  ShowToc = true
+  # Hiển thị đường dẫn điều hướng (Breadcrumbs)
+  ShowBreadCrumbs = true
+  
+ [params.profileMode]
+  enabled = true
+  title = "Hồ Thái Phong" 
+  subtitle = """
+  👋 Chào mừng đến với Blog cá nhân của tôi!
+  
+  """
+  # Tạm thời dùng link ảnh online, lát tôi chỉ bạn thay ảnh thật
+  imageUrl = "https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg" 
+  imageTitle = "Avatar"
+  imageWidth = 150
+  imageHeight = 150
+
+  # Thêm các nút bấm điều hướng (Call to Action)
+  [[params.profileMode.buttons]]
+    name = "📖 Đọc bài viết"
+    url = "/posts"
+
+  [[params.profileMode.buttons]]
+    name = "📂 Github của tôi"
+    url = "https://github.com/thaiphong89"
+
+  [[params.profileMode.buttons]]
+    name = "📧 Liên hệ"
+    url = "mailto:email@example.com"
+
+# Phần Social Icons giữ nguyên hoặc thêm mới
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/"
+[[params.socialIcons]]
+  name = "facebook"
+  url = "https://www.facebook.com/hothai.phong.1656/"
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/"
+  # --- CẤU HÌNH MENU CHUẨN ---
+[[menu.main]]
+  identifier = "home"
+  name = "HOME"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "about"
+  name = "ABOUT"
+  url = "/about/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "resume"
+  name = "RESUME"
+  url = "/resume/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "gallery"
+  name = "GALLERY"
+  url = "/gallery/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "portfolio"
+  name = "PORTFOLIO"
+  url = "/portfolio/"
+  weight = 50
+
+[[menu.main]]
+  identifier = "contact"
+  name = "CONTACT"
+  url = "/contact/"
+  weight = 60
+  [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [outputs]
+    home = ["HTML", "RSS", "JSON"] # Quan trọng: Phải có "JSON"
+[[menu.main]]
+    identifier = "search"
+    name = "Search 🔍"  # Hoặc dùng icon kính lúp
+    url = "/search/"
+    weight = 100       # Số lớn nhất để nó nằm ngoài cùng bên phải
+    [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]

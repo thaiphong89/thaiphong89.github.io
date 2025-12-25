@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Java Bài 3: Câu Lệnh Điều Kiện If-Else - Blog Hồ Thái Phong</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            darkMode: "class", 
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#334155", "primary-hover": "#0f172a",
+                        "background-light": "#ffffff", "background-dark": "#0f172a", 
+                        "text-light": "#334155", "text-dark": "#e2e8f0"
+                    }, 
+                    fontFamily: { display: "Manrope", body: ["Inter", "sans-serif"] }
+                }
+            }
+        };
+    </script>
+    <style> 
+         
+        html { scrollbar-gutter: stable; }
+
+         
+        body { font-family: 'Inter', sans-serif; }
+        
+        @view-transition { navigation: auto; }
+        
+        ::view-transition-old(root) { animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both fade-out; }
+        ::view-transition-new(root) { animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both fade-in; }
+
+        @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fade-out { from { opacity: 1; } to { opacity: 0; } }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-slate-200 dark:selection:bg-slate-700">
+
+<nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/90 dark:bg-background-dark/90 border-b border-slate-100 dark:border-slate-800 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+            <div class="flex items-center gap-4">
+                <a class="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2" href="/">
+                    <span class="font-display">Hồ Thái Phong</span>
+                </a>
+                <div class="h-4 w-px bg-slate-300 dark:bg-slate-700 hidden sm:block"></div>
+              
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-1">
+                <a href="/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50">Home</a>
+                <a href="/about/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50">About</a>
+                <a href="/resume/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50">Resume</a>
+                <a href="/posts/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white">Blog</a>
+                <a href="/contact/" class="px-4 py-2 text-sm font-medium rounded-md transition-colors text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800/50">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <button class="p-2 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-white focus:outline-none" id="theme-toggle">
+                    <svg class="hidden dark:block w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    <svg class="block dark:hidden w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </button>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none">
+                        <svg class="w-6 h-6 text-slate-600 dark:text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Home</a>
+            <a href="/about/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">About</a>
+            <a href="/resume/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Resume</a>
+            <a href="/posts/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-900 dark:text-white bg-slate-50 dark:bg-slate-800">Blog</a>
+            <a href="/contact/" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<main class="flex-grow py-12 px-4 sm:px-6">
+    <div class="max-w-3xl mx-auto">
+        <div class="mb-8">
+            <a href="/posts/" class="inline-flex items-center gap-2 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group">
+                <i class='bx bx-left-arrow-alt text-2xl group-hover:-translate-x-1 transition-transform'></i>
+                Quay lại danh sách Blog
+            </a>
+        </div>
+
+        <header class="mb-8 pb-8 border-b border-slate-200 dark:border-slate-800">
+            <h1 class="text-3xl sm:text-5xl font-bold text-slate-900 dark:text-white font-display mb-6 leading-tight">Java Bài 3: Câu Lệnh Điều Kiện If-Else</h1>
+            <div class="flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+                <div class="flex items-center gap-2">
+                    <i class='bx bx-calendar'></i>
+                    <time>04/01/2025</time>
+                </div>
+                <span class="hidden sm:inline">•</span>
+                <div class="flex items-center gap-2">
+                    <i class='bx bx-time-five'></i>
+                    <span>1 phút đọc</span>
+                </div>
+            </div>
+        </header>
+
+        
+        <figure class="mb-10 rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-slate-800">
+            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&amp;w=2076&amp;auto=format&amp;fit=crop" alt="Fork in the road sign" class="w-full object-cover max-h-[500px]">
+            
+            <figcaption class="text-center text-sm text-slate-500 dark:text-slate-400 py-3 bg-slate-50 dark:bg-slate-900/50 italic border-t border-slate-100 dark:border-slate-800">
+                Nếu đúng thì rẽ trái, nếu sai thì rẽ phải.
+            </figcaption>
+            
+        </figure>
+        
+
+        <article class="prose prose-lg prose-slate dark:prose-invert max-w-none 
+                        prose-headings:font-display prose-headings:font-bold prose-headings:text-slate-900 dark:prose-headings:text-white
+                        prose-a:text-blue-600 dark:prose-a:text-blue-400 hover:prose-a:underline
+                        prose-img:rounded-xl prose-img:shadow-lg prose-img:border prose-img:border-slate-200 dark:prose-img:border-slate-700
+                        prose-pre:bg-slate-800 prose-pre:border prose-pre:border-slate-700">
+            <p>Cuộc sống luôn tràn ngập những lựa chọn: &ldquo;Nếu trời mưa, tôi sẽ ở nhà. Ngược lại, tôi sẽ đi chơi&rdquo;. Trong Java, chúng ta thể hiện tư duy này qua câu lệnh <strong>if-else</strong>.</p>
+<h2 id="1-cấu-trúc-if-else">1. Cấu trúc If-Else</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (điều_kiện) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Thực hiện nếu điều kiện ĐÚNG (true)</span>
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Thực hiện nếu điều kiện SAI (false)</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">KiemTraDauRot</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">double</span> diemThi <span style="color:#f92672">=</span> 4.<span style="color:#a6e22e">5</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (diemThi <span style="color:#f92672">&gt;=</span> 5.<span style="color:#a6e22e">0</span>) {
+</span></span><span style="display:flex;"><span>            System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Chúc mừng! Bạn đã đậu.&#34;</span>);
+</span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>            System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#e6db74">&#34;Rất tiếc, bạn cần thi lại.&#34;</span>);
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+        </article>
+    </div>
+</main>
+
+<footer class="py-8 text-center text-sm text-slate-400 dark:text-slate-500 border-t border-slate-100 dark:border-slate-800 mt-auto">
+    <p>© 2025 Hồ Thái Phong.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+<script>
+    const themeBtn = document.querySelector("#theme-toggle");
+    const html = document.querySelector("html");
+    const mobileBtn = document.querySelector("#mobile-menu-btn");
+    const mobileMenu = document.querySelector("#mobile-menu");
+
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        html.classList.add('dark');
+    } else {
+        html.classList.remove('dark');
+    }
+    
+    themeBtn.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';
+        zoom.update({ background: html.classList.contains('dark') ? '#0f172a' : '#ffffff' });
+    });
+
+    if(mobileBtn && mobileMenu){
+        mobileBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    }
+
+    const zoom = mediumZoom('.prose img, figure img', {
+        margin: 24,
+        background: localStorage.theme === 'dark' ? '#0f172a' : '#ffffff',
+        scrollOffset: 0,
+    });
+</script>
+</body>
+</html>
