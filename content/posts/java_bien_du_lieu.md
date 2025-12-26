@@ -1,6 +1,6 @@
 ---
-title: "Java Bài 2: Biến và Các Kiểu Dữ Liệu Cơ Bản"
-date: 2025-01-03T08:00:00+07:00
+title: "Java Phần 2: Biến và Các Kiểu Dữ Liệu Cơ Bản"
+date: 2025-12-03T08:00:00+07:00
 draft: false
 summary: "Tìm hiểu về các hộp chứa dữ liệu trong Java: Biến là gì? Có những kiểu dữ liệu nào quan trọng?"
 tags: ["Java", "Basics", "Variables"]

@@ -1,6 +1,6 @@
 ---
 title: "Làm quen với Java: Hướng dẫn cho người mới bắt đầu"
-date: 2025-01-02T08:00:00+07:00
+date: 2025-12-12T08:00:00+07:00
 draft: false
 summary: "Khám phá ngôn ngữ lập trình Java - 'Viết một lần, chạy mọi nơi'. Bài viết này sẽ giúp bạn hiểu cú pháp cơ bản và viết chương trình đầu tiên."
 tags: ["Java", "Programming", "Tutorial"]

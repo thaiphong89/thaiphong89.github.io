@@ -3,77 +3,217 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://thaiphong89.vercel.app/</loc>
-    <lastmod>2025-01-15T08:00:00+07:00</lastmod>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://thaiphong89.vercel.app/categories/</loc>
-    <lastmod>2025-01-15T08:00:00+07:00</lastmod>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/concept/</loc>
-    <lastmod>2025-01-15T08:00:00+07:00</lastmod>
+    <loc>https://thaiphong89.vercel.app/categories/chia-s%E1%BA%BB/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/history/</loc>
-    <lastmod>2025-01-15T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/categories/l%E1%BA%ADp-tr%C3%ACnh/</loc>
-    <lastmod>2025-01-15T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/posts/java_oop/</loc>
-    <lastmod>2025-01-15T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/categories/l%C3%BD-thuy%E1%BA%BFt/</loc>
-    <lastmod>2025-01-15T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/oop/</loc>
-    <lastmod>2025-01-15T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/posts/</loc>
-    <lastmod>2025-01-15T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/programming-philosophy/</loc>
-    <lastmod>2025-01-15T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/</loc>
-    <lastmod>2025-01-15T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/abstraction/</loc>
-    <lastmod>2025-01-14T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/interface/</loc>
-    <lastmod>2025-01-14T08:00:00+07:00</lastmod>
+    <loc>https://thaiphong89.vercel.app/posts/hanh-trinh-java/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://thaiphong89.vercel.app/tags/java/</loc>
-    <lastmod>2025-01-14T08:00:00+07:00</lastmod>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/categories/l%E1%BA%ADp-tr%C3%ACnh/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/posts/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/programming/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/sharing/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/sinh-vi%C3%AAn/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/posts/hello/</loc>
+    <lastmod>2025-12-12T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/tutorial/</loc>
+    <lastmod>2025-12-12T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/concept/</loc>
+    <lastmod>2025-12-09T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/history/</loc>
+    <lastmod>2025-12-09T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/posts/java_oop/</loc>
+    <lastmod>2025-12-09T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/categories/l%C3%BD-thuy%E1%BA%BFt/</loc>
+    <lastmod>2025-12-09T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/oop/</loc>
+    <lastmod>2025-12-09T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/programming-philosophy/</loc>
+    <lastmod>2025-12-09T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/arrays/</loc>
+    <lastmod>2025-12-06T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/data-structure/</loc>
+    <lastmod>2025-12-06T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/posts/java_mang/</loc>
+    <lastmod>2025-12-06T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/basics/</loc>
+    <lastmod>2025-12-05T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/posts/java_vong_lap/</loc>
+    <lastmod>2025-12-05T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/loops/</loc>
+    <lastmod>2025-12-05T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/abstraction/</loc>
+    <lastmod>2025-12-04T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/interface/</loc>
+    <lastmod>2025-12-04T08:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://thaiphong89.vercel.app/posts/tru_tuong_oop/</loc>
-    <lastmod>2025-01-14T08:00:00+07:00</lastmod>
+    <lastmod>2025-12-04T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/data-analysis/</loc>
+    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/categories/d%E1%BB%B1-%C3%A1n/</loc>
+    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/flutter/</loc>
+    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/portfolio/</loc>
+    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/project/</loc>
+    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/posts/du-an-expense-tracker/</loc>
+    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/control-flow/</loc>
+    <lastmod>2025-12-03T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/posts/java_bien_du_lieu/</loc>
+    <lastmod>2025-12-03T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/posts/java-cau-lenh-if-else/</loc>
+    <lastmod>2025-12-03T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/logic/</loc>
+    <lastmod>2025-12-03T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/variables/</loc>
+    <lastmod>2025-12-03T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/dry/</loc>
+    <lastmod>2025-12-02T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/inheritance/</loc>
+    <lastmod>2025-12-02T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/posts/ke_thua_oop/</loc>
+    <lastmod>2025-12-02T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/posts/java_co_ban/</loc>
+    <lastmod>2025-12-02T08:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -84,21 +224,6 @@
   </url><url>
     <loc>https://thaiphong89.vercel.app/tags/polymorphism/</loc>
     <lastmod>2025-01-13T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/dry/</loc>
-    <lastmod>2025-01-12T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/inheritance/</loc>
-    <lastmod>2025-01-12T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/posts/ke_thua_oop/</loc>
-    <lastmod>2025-01-12T08:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
@@ -114,81 +239,6 @@
   </url><url>
     <loc>https://thaiphong89.vercel.app/tags/security/</loc>
     <lastmod>2025-01-11T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/arrays/</loc>
-    <lastmod>2025-01-06T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/data-structure/</loc>
-    <lastmod>2025-01-06T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/posts/java_mang/</loc>
-    <lastmod>2025-01-06T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/basics/</loc>
-    <lastmod>2025-01-05T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/posts/java_vong_lap/</loc>
-    <lastmod>2025-01-05T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/loops/</loc>
-    <lastmod>2025-01-05T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/control-flow/</loc>
-    <lastmod>2025-01-04T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/posts/java-cau-lenh-if-else/</loc>
-    <lastmod>2025-01-04T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/logic/</loc>
-    <lastmod>2025-01-04T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/posts/java_bien_du_lieu/</loc>
-    <lastmod>2025-01-03T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/variables/</loc>
-    <lastmod>2025-01-03T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/posts/hello/</loc>
-    <lastmod>2025-01-02T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/posts/java_co_ban/</loc>
-    <lastmod>2025-01-02T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/programming/</loc>
-    <lastmod>2025-01-02T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/tutorial/</loc>
-    <lastmod>2025-01-02T08:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

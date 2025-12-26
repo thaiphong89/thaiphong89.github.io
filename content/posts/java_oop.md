@@ -1,6 +1,6 @@
 ---
 title: "Lịch sử & Tầm quan trọng của OOP: Tại sao nó thay đổi thế giới?"
-date: 2025-01-15T08:00:00+07:00
+date: 2025-12-09T08:00:00+07:00
 draft: false
 summary: "Tại sao chúng ta không cứ viết code theo kiểu cũ cho nhanh mà phải dùng Class và Object? Cùng tìm hiểu nguồn gốc và triết lý của OOP."
 tags: ["OOP", "History", "Concept", "Programming Philosophy"]

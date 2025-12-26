@@ -1,6 +1,6 @@
 ---
 title: "Java OOP Phần 4: Tư Duy Của Kiến Trúc Sư (Abstraction)"
-date: 2025-01-14T08:00:00+07:00
+date: 2025-12-04T08:00:00+07:00
 draft: false
 summary: "Để lái xe hơi, bạn có cần biết động cơ đốt trong hoạt động ra sao không? Không. Bạn chỉ cần biết Vô-lăng và Chân ga. Đó chính là sự Trừu tượng hóa."
 tags: ["Java", "OOP", "Abstraction", "Interface"]

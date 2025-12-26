@@ -1,6 +1,6 @@
 ---
-title: "Java Bài 5: Mảng (Arrays) - Quản Lý Danh Sách"
-date: 2025-01-06T08:00:00+07:00
+title: "Java Phần 5: Mảng (Arrays) - Quản Lý Danh Sách"
+date: 2025-12-06T08:00:00+07:00
 draft: false
 summary: "Làm thế nào để lưu điểm số của 100 sinh viên mà không cần khai báo 100 biến? Mảng chính là câu trả lời."
 tags: ["Java", "Arrays", "Data Structure"]

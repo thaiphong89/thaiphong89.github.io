@@ -6,12 +6,12 @@
     <description>Recent content in Arrays on Blog Cá Nhân </description>
     <generator>Hugo -- 0.152.2</generator>
     <language>vi</language>
-    <lastBuildDate>Mon, 06 Jan 2025 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 06 Dec 2025 08:00:00 +0700</lastBuildDate>
     <atom:link href="https://thaiphong89.vercel.app/tags/arrays/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Java Bài 5: Mảng (Arrays) - Quản Lý Danh Sách</title>
+      <title>Java Phần 5: Mảng (Arrays) - Quản Lý Danh Sách</title>
       <link>https://thaiphong89.vercel.app/posts/java_mang/</link>
-      <pubDate>Mon, 06 Jan 2025 08:00:00 +0700</pubDate>
+      <pubDate>Sat, 06 Dec 2025 08:00:00 +0700</pubDate>
       <guid>https://thaiphong89.vercel.app/posts/java_mang/</guid>
       <description>Làm thế nào để lưu điểm số của 100 sinh viên mà không cần khai báo 100 biến? Mảng chính là câu trả lời.</description>
     </item>

@@ -1,6 +1,6 @@
 ---
-title: "Java Bài 4: Vòng Lặp For và While"
-date: 2025-01-05T08:00:00+07:00
+title: "Java Phần 4 : Vòng Lặp For và While"
+date: 2025-12-05T08:00:00+07:00
 draft: false
 summary: "Đừng lặp lại code thủ công! Hãy để máy tính làm việc nặng nhọc với vòng lặp For và While."
 tags: ["Java", "Loops", "Basics"]

@@ -1,6 +1,6 @@
 ---
-title: "Java Bài 3: Câu Lệnh Điều Kiện If-Else"
-date: 2025-01-04T08:00:00+07:00
+title: "Java Phần 3: Câu Lệnh Điều Kiện If-Else"
+date: 2025-12-03T08:00:00+07:00
 draft: false
 summary: "Làm sao để chương trình thông minh hơn? Hãy dạy nó cách đưa ra quyết định dựa trên các điều kiện."
 tags: ["Java", "Logic", "Control Flow"]

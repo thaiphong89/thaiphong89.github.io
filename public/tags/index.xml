@@ -6,55 +6,174 @@
     <description>Recent content in Tags on Blog Cá Nhân </description>
     <generator>Hugo -- 0.152.2</generator>
     <language>vi</language>
-    <lastBuildDate>Wed, 15 Jan 2025 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://thaiphong89.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java</title>
+      <link>https://thaiphong89.vercel.app/tags/java/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://thaiphong89.vercel.app/tags/programming/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sharing</title>
+      <link>https://thaiphong89.vercel.app/tags/sharing/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/sharing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sinh Viên</title>
+      <link>https://thaiphong89.vercel.app/tags/sinh-vi%C3%AAn/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/sinh-vi%C3%AAn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>https://thaiphong89.vercel.app/tags/tutorial/</link>
+      <pubDate>Fri, 12 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/tutorial/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Concept</title>
       <link>https://thaiphong89.vercel.app/tags/concept/</link>
-      <pubDate>Wed, 15 Jan 2025 08:00:00 +0700</pubDate>
+      <pubDate>Tue, 09 Dec 2025 08:00:00 +0700</pubDate>
       <guid>https://thaiphong89.vercel.app/tags/concept/</guid>
       <description></description>
     </item>
     <item>
       <title>History</title>
       <link>https://thaiphong89.vercel.app/tags/history/</link>
-      <pubDate>Wed, 15 Jan 2025 08:00:00 +0700</pubDate>
+      <pubDate>Tue, 09 Dec 2025 08:00:00 +0700</pubDate>
       <guid>https://thaiphong89.vercel.app/tags/history/</guid>
       <description></description>
     </item>
     <item>
       <title>OOP</title>
       <link>https://thaiphong89.vercel.app/tags/oop/</link>
-      <pubDate>Wed, 15 Jan 2025 08:00:00 +0700</pubDate>
+      <pubDate>Tue, 09 Dec 2025 08:00:00 +0700</pubDate>
       <guid>https://thaiphong89.vercel.app/tags/oop/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming Philosophy</title>
       <link>https://thaiphong89.vercel.app/tags/programming-philosophy/</link>
-      <pubDate>Wed, 15 Jan 2025 08:00:00 +0700</pubDate>
+      <pubDate>Tue, 09 Dec 2025 08:00:00 +0700</pubDate>
       <guid>https://thaiphong89.vercel.app/tags/programming-philosophy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arrays</title>
+      <link>https://thaiphong89.vercel.app/tags/arrays/</link>
+      <pubDate>Sat, 06 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/arrays/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Structure</title>
+      <link>https://thaiphong89.vercel.app/tags/data-structure/</link>
+      <pubDate>Sat, 06 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/data-structure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Basics</title>
+      <link>https://thaiphong89.vercel.app/tags/basics/</link>
+      <pubDate>Fri, 05 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/basics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loops</title>
+      <link>https://thaiphong89.vercel.app/tags/loops/</link>
+      <pubDate>Fri, 05 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/loops/</guid>
       <description></description>
     </item>
     <item>
       <title>Abstraction</title>
       <link>https://thaiphong89.vercel.app/tags/abstraction/</link>
-      <pubDate>Tue, 14 Jan 2025 08:00:00 +0700</pubDate>
+      <pubDate>Thu, 04 Dec 2025 08:00:00 +0700</pubDate>
       <guid>https://thaiphong89.vercel.app/tags/abstraction/</guid>
       <description></description>
     </item>
     <item>
       <title>Interface</title>
       <link>https://thaiphong89.vercel.app/tags/interface/</link>
-      <pubDate>Tue, 14 Jan 2025 08:00:00 +0700</pubDate>
+      <pubDate>Thu, 04 Dec 2025 08:00:00 +0700</pubDate>
       <guid>https://thaiphong89.vercel.app/tags/interface/</guid>
       <description></description>
     </item>
     <item>
-      <title>Java</title>
-      <link>https://thaiphong89.vercel.app/tags/java/</link>
-      <pubDate>Tue, 14 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/tags/java/</guid>
+      <title>Data Analysis</title>
+      <link>https://thaiphong89.vercel.app/tags/data-analysis/</link>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/data-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flutter</title>
+      <link>https://thaiphong89.vercel.app/tags/flutter/</link>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/flutter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Portfolio</title>
+      <link>https://thaiphong89.vercel.app/tags/portfolio/</link>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/portfolio/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project</title>
+      <link>https://thaiphong89.vercel.app/tags/project/</link>
+      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/project/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Control Flow</title>
+      <link>https://thaiphong89.vercel.app/tags/control-flow/</link>
+      <pubDate>Wed, 03 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/control-flow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logic</title>
+      <link>https://thaiphong89.vercel.app/tags/logic/</link>
+      <pubDate>Wed, 03 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/logic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Variables</title>
+      <link>https://thaiphong89.vercel.app/tags/variables/</link>
+      <pubDate>Wed, 03 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/variables/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DRY</title>
+      <link>https://thaiphong89.vercel.app/tags/dry/</link>
+      <pubDate>Tue, 02 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/dry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inheritance</title>
+      <link>https://thaiphong89.vercel.app/tags/inheritance/</link>
+      <pubDate>Tue, 02 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/tags/inheritance/</guid>
       <description></description>
     </item>
     <item>
@@ -62,20 +181,6 @@
       <link>https://thaiphong89.vercel.app/tags/polymorphism/</link>
       <pubDate>Mon, 13 Jan 2025 08:00:00 +0700</pubDate>
       <guid>https://thaiphong89.vercel.app/tags/polymorphism/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DRY</title>
-      <link>https://thaiphong89.vercel.app/tags/dry/</link>
-      <pubDate>Sun, 12 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/tags/dry/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Inheritance</title>
-      <link>https://thaiphong89.vercel.app/tags/inheritance/</link>
-      <pubDate>Sun, 12 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/tags/inheritance/</guid>
       <description></description>
     </item>
     <item>
@@ -90,69 +195,6 @@
       <link>https://thaiphong89.vercel.app/tags/security/</link>
       <pubDate>Sat, 11 Jan 2025 08:00:00 +0700</pubDate>
       <guid>https://thaiphong89.vercel.app/tags/security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Arrays</title>
-      <link>https://thaiphong89.vercel.app/tags/arrays/</link>
-      <pubDate>Mon, 06 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/tags/arrays/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Data Structure</title>
-      <link>https://thaiphong89.vercel.app/tags/data-structure/</link>
-      <pubDate>Mon, 06 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/tags/data-structure/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Basics</title>
-      <link>https://thaiphong89.vercel.app/tags/basics/</link>
-      <pubDate>Sun, 05 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/tags/basics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Loops</title>
-      <link>https://thaiphong89.vercel.app/tags/loops/</link>
-      <pubDate>Sun, 05 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/tags/loops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Control Flow</title>
-      <link>https://thaiphong89.vercel.app/tags/control-flow/</link>
-      <pubDate>Sat, 04 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/tags/control-flow/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Logic</title>
-      <link>https://thaiphong89.vercel.app/tags/logic/</link>
-      <pubDate>Sat, 04 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/tags/logic/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Variables</title>
-      <link>https://thaiphong89.vercel.app/tags/variables/</link>
-      <pubDate>Fri, 03 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/tags/variables/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Programming</title>
-      <link>https://thaiphong89.vercel.app/tags/programming/</link>
-      <pubDate>Thu, 02 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/tags/programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tutorial</title>
-      <link>https://thaiphong89.vercel.app/tags/tutorial/</link>
-      <pubDate>Thu, 02 Jan 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/tags/tutorial/</guid>
       <description></description>
     </item>
   </channel>

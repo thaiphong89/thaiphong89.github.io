@@ -1,231 +1,96 @@
 ---
-title: "Về tôi"
+title: ""
 hidemeta: true
 layout: "about"
 ---
 
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 
-<script>
-    tailwind.config = {
-        darkMode: "class",
-        theme: {
-            extend: {
-                colors: {
-                    primary: "#3B82F6", 
-                    secondary: "#8B5CF6",
-                    "surface-light": "#F8FAFC",
-                    "surface-dark": "#1E293B",
-                },
-                fontFamily: {
-                    sans: ['Inter', 'sans-serif'],
-                    display: ['Space Grotesk', 'sans-serif'],
-                },
-                boxShadow: {
-                    'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
-                    'glow': '0 0 15px rgba(59, 130, 246, 0.3)',
-                }
-            },
-        },
-    };
-</script>
+<div class="max-w-3xl mx-auto px-4 font-sans text-slate-700 dark:text-slate-300 -mt-32 relative z-10">
 
-<style>
-    /* Reset style để tránh xung đột với Hugo Theme */
-    .prose { max-width: none !important; }
-    
-    /* Hiệu ứng chữ Gradient */
-    .gradient-text {
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(to right, #3B82F6, #8B5CF6);
-    }
-    
-    /* Hiệu ứng Hover Card */
-    .card-hover { transition: all 0.3s ease; }
-    .card-hover:hover { transform: translateY(-5px); }
-</style>
-
-<div class="font-sans text-slate-600 dark:text-slate-300 antialiased max-w-5xl mx-auto pb-10">
-
-<header class="mb-16 mt-8 relative">
-       
-<div class="flex flex-col md:flex-row gap-8 items-start">
-            <div class="flex-1">
-                <h2 class="text-3xl font-bold mb-2 gradient-text inline-block">Hồ Thái Phong</h2>
-                <p class="text-lg text-slate-500 dark:text-slate-400 mb-6 font-medium">Student @ HUTECH | Java Backend & Security Enthusiast</p>
-                
-<div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-soft relative overflow-hidden group">
-                    <div class="absolute top-0 left-0 w-1 h-full bg-primary group-hover:w-1.5 transition-all"></div>
-                    <div class="flex items-start gap-4">
-                        <span class="text-4xl animate-bounce" style="animation-duration: 2s;">👋</span>
-                        <div>
-                            <h3 class="text-xl font-bold mb-2 text-slate-900 dark:text-white">Xin chào!</h3>
-                            <p class="leading-relaxed">
-                                Tôi là sinh viên năm cuối chuyên ngành <strong class="text-primary">Công nghệ Thông tin</strong> tại <strong class="text-primary">HUTECH</strong>. Tôi không chỉ viết code, tôi xây dựng các giải pháp an toàn và hiệu quả. Hiện tại, tôi đang tập trung nghiên cứu sâu về <strong class="text-secondary">Java Backend</strong> kết hợp với tư duy <strong class="text-secondary">Cybersecurity</strong>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-<div class="w-full md:w-1/3 flex justify-center">
-                <div class="relative w-48 h-48 md:w-56 md:h-56">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full opacity-20 animate-pulse"></div>
-                    <img alt="Hồ Thái Phong" class="w-full h-full object-cover rounded-full p-2 bg-white dark:bg-surface-dark border-2 border-gray-100 dark:border-gray-700 shadow-xl" src="/images/avatar.jpg"/>
-                </div>
-            </div>
-        </div>
-    </header>
-
-<section class="mb-16">
-        <div class="flex items-center gap-3 mb-6">
-            <span class="material-icons-round text-primary text-3xl">construction</span>
-            <h2 class="text-2xl font-bold font-display text-slate-900 dark:text-white">Kỹ năng chuyên môn</h2>
+<div class="flex flex-col items-center text-center mb-10 pt-10"> <div class="relative w-44 h-44 mb-6 rounded-full overflow-hidden border-[6px] border-white shadow-2xl dark:border-slate-800 bg-white">
+            <img src="/images/avatar.jpg" alt="Hồ Thái Phong" class="w-full h-full object-cover object-center">
         </div>
         
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-soft hover:shadow-glow card-hover group">
-                <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mb-4 text-blue-600 dark:text-blue-400">
-                    <span class="material-icons-round text-2xl">computer</span>
-                </div>
-                <h3 class="text-lg font-bold mb-3 text-slate-900 dark:text-white group-hover:text-primary transition-colors">Backend & Core</h3>
-                <ul class="space-y-2">
-                    <li class="flex items-center gap-2 text-sm"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span> Java (Spring Boot)</li>
-                    <li class="flex items-center gap-2 text-sm"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span> Dart (Flutter)</li>
-                    <li class="flex items-center gap-2 text-sm"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span> ASP.NET Core</li>
-                </ul>
-            </div>
+<h1 class="text-3xl font-bold text-slate-900 dark:text-white mb-2">Hồ Thái Phong</h1>
+        <p class="text-xs md:text-sm font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+            Student @ HUTECH | Data Engineer & Software Student
+        </p>
+    </div>
 
-<div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-soft hover:shadow-glow card-hover group">
-                <div class="w-12 h-12 rounded-xl bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center mb-4 text-indigo-600 dark:text-indigo-400">
-                    <span class="material-icons-round text-2xl">security</span>
-                </div>
-                <h3 class="text-lg font-bold mb-3 text-slate-900 dark:text-white group-hover:text-primary transition-colors">Network & Security</h3>
-                <ul class="space-y-2">
-                    <li class="flex items-center gap-2 text-sm"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full"></span> TCP/IP, Routing</li>
-                    <li class="flex items-center gap-2 text-sm"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full"></span> InfoSec Basics</li>
-                    <li class="flex items-center gap-2 text-sm"><span class="w-1.5 h-1.5 bg-indigo-400 rounded-full"></span> Linux Server</li>
-                </ul>
-            </div>
+<div class="text-center max-w-2xl mx-auto mb-12 text-slate-600 dark:text-slate-300 text-sm md:text-base">
+        <p>
+            <strong>Xin chào!</strong> Mình là sinh viên năm cuối chuyên ngành CNTT. Hiện tại, mình đang tập trung nghiên cứu về <strong>Dữ Liệu</strong> kết hợp với tư duy <strong>Phần Mềm</strong>.
+        </p>
+    </div>
 
- <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-soft hover:shadow-glow card-hover group">
-                <div class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mb-4 text-purple-600 dark:text-purple-400">
-                    <span class="material-icons-round text-2xl">storage</span>
+<div class="mb-12 bg-blue-50 dark:bg-slate-800/50 p-6 rounded-2xl border border-blue-100 dark:border-slate-700 shadow-sm">
+        <h3 class="flex items-center gap-2 text-lg font-bold text-blue-700 dark:text-blue-400 mb-4">
+            <i class="fas fa-rocket"></i> Tiêu Chí Blog
+        </h3>
+        <ul class="space-y-3 text-sm text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle mt-1 text-green-500"></i>
+                <span><strong>Chia sẻ kinh nghiệm thực tế:</strong> Nơi mình ghi lại những kỹ thuật lập trình, cách sửa lỗi (debug) và các dự án mình đã thực hiện.</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle mt-1 text-green-500"></i>
+                <span><strong>Lưu trữ bài học cá nhân:</strong> Tổng hợp những kiến thức, bài học quý giá mình tích lũy được trên giảng đường và trong quá trình tự học.</span>
+            </li>
+            <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle mt-1 text-green-500"></i>
+                <span><strong>Kết nối đam mê:</strong> Mong muốn giao lưu, học hỏi cùng cộng đồng những người yêu thích công nghệ và dữ liệu.</span>
+            </li>
+        </ul>
+    </div>
+
+<div class="mb-12">
+        <h2 class="text-lg font-bold text-center text-slate-900 dark:text-white mb-6 uppercase tracking-wide">Góc Nhỏ Cá Nhân</h2>
+        <div class="w-20 h-1 bg-teal-400 mx-auto -mt-4 mb-8 rounded-full"></div>
+
+<div class="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-700 flex flex-col md:flex-row items-start gap-6">
+            <div class="md:w-1/4 flex flex-col items-center justify-center pt-2 w-full">
+                <div class="w-16 h-16 bg-teal-50 dark:bg-teal-900/30 rounded-full flex items-center justify-center mb-3">
+                    <i class="fas fa-running text-3xl text-teal-500"></i>
                 </div>
-                <h3 class="text-lg font-bold mb-3 text-slate-900 dark:text-white group-hover:text-primary transition-colors">Data & Tools</h3>
-                <ul class="space-y-2">
-                    <li class="flex items-center gap-2 text-sm"><span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span> SQL, Docker, Git</li>
-                    <li class="flex items-center gap-2 text-sm"><span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span> UML, ERD</li>
-                    <li class="flex items-center gap-2 text-sm"><span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span> VS Code, IntelliJ</li>
-                </ul>
+                <div class="flex gap-3 text-teal-400 text-xs">
+                    <i class="fas fa-plane"></i> <i class="fas fa-briefcase"></i> <i class="fas fa-music"></i>
+                </div>
+            </div>
+            <div class="md:w-3/4 w-full">
+                <div class="border-l-4 border-teal-400 pl-4 py-2 mb-4 bg-gray-50 dark:bg-slate-700/50 italic text-slate-700 dark:text-slate-200 text-sm font-medium rounded-r-lg">
+                    "Work hard, Play hard."
+                </div>
+                <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-2">
+                    Bên cạnh những dòng code khô khan, mình là người yêu thích sự tự do và vận động. 
+                    Mình có niềm đam mê lớn với <strong>Du lịch</strong> để khám phá những vùng đất mới và đặc biệt là <strong>Cầu lông</strong> 🏸.
+                </p>
+                <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                    Đây là cách tuyệt vời nhất để mình "refresh" lại bản thân sau những giờ làm việc căng thẳng.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
 
-<section class="mb-16">
-        <div class="flex items-center gap-3 mb-6">
-            <span class="material-icons-round text-primary text-3xl">rocket_launch</span>
-            <h2 class="text-2xl font-bold font-display text-slate-900 dark:text-white">Hành trình</h2>
-        </div>
+<div class="text-center bg-white dark:bg-slate-800 border border-slate-100 dark:border-slate-700 py-8 rounded-3xl shadow-sm">
+        <h2 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Let's Connect!</h2>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mb-6 max-w-lg mx-auto px-4">
+            Đừng ngần ngại liên hệ với mình nhé! Dù là để bàn luận về công nghệ, gỡ rối code hay đơn giản là... 
+            <span class="text-teal-600 font-bold">set kèo một trận cầu lông giao lưu</span>.
+        </p>
         
-<div class="relative pl-8 border-l-2 border-gray-200 dark:border-gray-700 space-y-10">
-            <div class="relative group">
-                <div class="absolute -left-[41px] top-1 h-6 w-6 rounded-full border-4 border-white dark:border-surface-dark bg-primary shadow-md"></div>
-                <div>
-                    <span class="text-xs font-bold text-primary uppercase tracking-wider mb-1 block">Hiện tại</span>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Full-stack & DevSecOps</h3>
-                    <p class="text-sm bg-white dark:bg-surface-dark p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
-                        Nghiên cứu sâu về kiến trúc Microservices và bảo mật hệ thống.
-                    </p>
-                </div>
-            </div>
-            <div class="relative group">
-                <div class="absolute -left-[41px] top-1 h-6 w-6 rounded-full border-4 border-white dark:border-surface-dark bg-gray-400 group-hover:bg-secondary transition-colors shadow-md"></div>
-                <div>
-                    <span class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-1 block">HUTECH</span>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Sinh viên CNTT</h3>
-                    <p class="text-sm bg-white dark:bg-surface-dark p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
-                        Xây dựng các dự án thực tế với Java Spring Boot và Mobile App.
-                    </p>
-                </div>
-            </div>
+<div class="flex justify-center gap-3 flex-wrap px-4">
+            <a href="mailto:phongho08092004@gmail.com" class="flex items-center gap-2 px-5 py-2 bg-slate-700 hover:bg-slate-800 !text-white !no-underline rounded-full text-sm font-bold transition-transform hover:-translate-y-1">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="https://github.com/thaiphong89" target="_blank" class="flex items-center gap-2 px-5 py-2 bg-black hover:bg-gray-900 !text-white !no-underline rounded-full text-sm font-bold transition-transform hover:-translate-y-1">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/th%C3%A1i-phong-h%E1%BB%93-02a3373a0/" target="_blank" class="flex items-center gap-2 px-5 py-2 bg-[#0077b5] hover:bg-[#006097] !text-white !no-underline rounded-full text-sm font-bold transition-transform hover:-translate-y-1">
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+            </a>
         </div>
-    </section>
-
-<section class="mb-16">
-        <div class="flex items-center gap-3 mb-8">
-            <span class="material-icons-round text-primary text-3xl">school</span>
-            <h2 class="text-2xl font-bold font-display text-slate-900 dark:text-white">Chứng chỉ nổi bật</h2>
-        </div>
-        
-<div class="bg-white dark:bg-surface-dark rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-soft">
-            <div class="space-y-4">
-                <div class="flex items-center gap-4 p-3 hover:bg-gray-50 dark:hover:bg-slate-800 rounded-lg transition-colors group cursor-default">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-certificate text-lg"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 dark:text-white">Cisco Networking Academy</h4>
-                        <p class="text-sm text-slate-500 dark:text-slate-400">Introduction to Cybersecurity 🛡️</p>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-gray-100 dark:bg-gray-700"></div>
-                <div class="flex items-center gap-4 p-3 hover:bg-gray-50 dark:hover:bg-slate-800 rounded-lg transition-colors group cursor-default">
-                    <div class="w-10 h-10 rounded-full bg-indigo-100 dark:bg-indigo-900/40 flex items-center justify-center text-indigo-600 dark:text-indigo-400 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-network-wired text-lg"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 dark:text-white">Cisco Networking Academy</h4>
-                        <p class="text-sm text-slate-500 dark:text-slate-400">Networking Basics 🌐</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<section class="mb-16">
-        <div class="flex items-center gap-3 mb-6">
-            <span class="material-icons-round text-primary text-3xl">sports_esports</span>
-            <h2 class="text-2xl font-bold font-display text-slate-900 dark:text-white">Sở Thích & Đam Mê</h2>
-        </div>
-        <div class="flex flex-wrap gap-4">
-            <div class="px-5 py-2.5 rounded-full bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 font-medium text-sm flex items-center gap-2 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-200 transition-colors">
-                <span class="material-icons-round text-base">flight_takeoff</span> Du lịch khám phá
-            </div>
-            <div class="px-5 py-2.5 rounded-full bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 font-medium text-sm flex items-center gap-2 border border-teal-200 dark:border-teal-800 hover:bg-teal-200 transition-colors">
-                <span class="material-icons-round text-base">sports_soccer</span> Bóng đá
-            </div>
-            <div class="px-5 py-2.5 rounded-full bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 font-medium text-sm flex items-center gap-2 border border-cyan-200 dark:border-cyan-800 hover:bg-cyan-200 transition-colors">
-                <span class="material-icons-round text-base">sports_tennis</span> Cầu lông
-            </div>
-        </div>
-    </section>
-
-<section>
-        <div class="bg-gradient-to-br from-gray-50 to-white dark:from-slate-800 dark:to-slate-900 p-8 rounded-3xl border border-gray-200 dark:border-gray-700 text-center shadow-lg relative overflow-hidden">
-            <div class="relative z-10">
-                <span class="text-4xl mb-4 block">📫</span>
-                <h2 class="text-3xl font-bold font-display text-slate-900 dark:text-white mb-3">Kết nối với tôi</h2>
-                <p class="mb-8 max-w-lg mx-auto">Trao đổi công việc hoặc rủ tôi làm một ván cầu lông!</p>
-                
-<div class="flex flex-wrap justify-center gap-4">
-                    <a class="inline-flex items-center gap-2 px-6 py-3 bg-red-500 hover:bg-red-600 text-white rounded-xl transition-all font-medium no-underline hover:shadow-lg hover:-translate-y-1" href="mailto:phongho08092004@gmail.com">
-                        <i class="fas fa-envelope"></i> Email
-                    </a>
-                    <a class="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-900 text-white rounded-xl transition-all font-medium no-underline hover:shadow-lg hover:-translate-y-1" href="https://github.com/thaiphong89" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl transition-all font-medium no-underline hover:shadow-lg hover:-translate-y-1" href="https://www.linkedin.com/in/th%C3%A1i-phong-h%E1%BB%93-02a3373a0/" target="_blank">
-                        <i class="fab fa-linkedin-in"></i> LinkedIn
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
 </div>
