@@ -104,7 +104,7 @@
       <link>https://thaiphong89.vercel.app/resume/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://thaiphong89.vercel.app/resume/</guid>
-      <description>Data Engineer Portfolio</description>
+      <description>Profile</description>
     </item>
     <item>
       <title>Liên hệ</title>
@@ -118,15 +118,12 @@
       <link>https://thaiphong89.vercel.app/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://thaiphong89.vercel.app/about/</guid>
-      <description>&lt;script src=&#34;https://cdn.tailwindcss.com?plugins=typography&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&#34; rel=&#34;stylesheet&#34;/&gt;
-&lt;div class=&#34;max-w-3xl mx-auto px-4 font-sans text-slate-700 dark:text-slate-300 -mt-32 relative z-10&#34;&gt;
-&lt;div class=&#34;flex flex-col items-center text-center mb-10 pt-10&#34;&gt; &lt;div class=&#34;relative w-44 h-44 mb-6 rounded-full overflow-hidden border-[6px] border-white shadow-2xl dark:border-slate-800 bg-white&#34;&gt;
-            &lt;img src=&#34;https://thaiphong89.vercel.app/images/avatar.jpg&#34; alt=&#34;Hồ Thái Phong&#34; class=&#34;w-full h-full object-cover object-center&#34;&gt;
-        &lt;/div&gt;
-&lt;h1 class=&#34;text-3xl font-bold text-slate-900 dark:text-white mb-2&#34;&gt;Hồ Thái Phong&lt;/h1&gt;
+      <description>&lt;link href=&#34;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css&#34; rel=&#34;stylesheet&#34;/&gt;
+&lt;div class=&#34;max-w-3xl mx-auto px-4 font-sans text-slate-700 dark:text-slate-300 relative z-10 transition-colors duration-300 -mt-24&#34;&gt;
+&lt;div class=&#34;flex flex-col items-center text-center mb-10 pt-0&#34;&gt;
+        &lt;h1 class=&#34;text-3xl font-bold text-slate-900 dark:text-white mb-2&#34;&gt;Hồ Thái Phong&lt;/h1&gt;
         &lt;p class=&#34;text-xs md:text-sm font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400&#34;&gt;
-            Student @ HUTECH | Data Engineer &amp; Software Student
+            Student @ HUTECH | Data  &amp; Software 
         &lt;/p&gt;
     &lt;/div&gt;
 &lt;div class=&#34;text-center max-w-2xl mx-auto mb-12 text-slate-600 dark:text-slate-300 text-sm md:text-base&#34;&gt;

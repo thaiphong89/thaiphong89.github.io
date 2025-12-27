@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html class="light" lang="vi">
+<html lang="vi">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>{{ .Title }} - Blog Hồ Thái Phong</title>
+    
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
     <script>
         tailwind.config = {
             darkMode: "class", 
@@ -24,24 +21,51 @@
             }
         };
     </script>
-    <style> 
-        /* 1. FIX QUAN TRỌNG: Chống nhảy bố cục */
-        html { scrollbar-gutter: stable; }
 
-        /* 2. Font chữ & View Transition */
+    <script>
+        // Check ngay khi trình duyệt đọc đến dòng này
+        try {
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        } catch (_) {}
+    </script>
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+    <style> 
+        html { scrollbar-gutter: stable; }
         body { font-family: 'Inter', sans-serif; }
         
-        @view-transition { navigation: auto; }
-        
-        ::view-transition-old(root) { animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both fade-out; }
-        ::view-transition-new(root) { animation: 300ms cubic-bezier(0.4, 0, 0.2, 1) both fade-in; }
+        /* 3. ĐỊNH NGHĨA HIỆU ỨNG SỔ TỪ TRÊN XUỐNG (Slide Down Fade) */
+        @keyframes slideDownFade {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px); /* Bắt đầu ở vị trí cao hơn 30px */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* Kết thúc ở vị trí chuẩn */
+            }
+        }
 
-        @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes fade-out { from { opacity: 1; } to { opacity: 0; } }
+        /* Class áp dụng animation */
+        .animate-enter {
+            opacity: 0; /* Ẩn mặc định để tránh chớp */
+            animation: slideDownFade 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; /* Chạy trong 0.8s */
+        }
+
+        /* View Transition (Nếu trình duyệt hỗ trợ) */
+        @view-transition { navigation: auto; }
     </style>
 </head>
 
-<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-slate-200 dark:selection:bg-slate-700">
+<body class="animate-enter bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-slate-200 dark:selection:bg-slate-700">
 
 <nav class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/90 dark:bg-background-dark/90 border-b border-slate-100 dark:border-slate-800 transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,7 +75,6 @@
                     <span class="font-display">Hồ Thái Phong</span>
                 </a>
                 <div class="h-4 w-px bg-slate-300 dark:bg-slate-700 hidden sm:block"></div>
-              
             </div>
             
             <div class="hidden md:flex items-center space-x-1">
@@ -143,12 +166,6 @@
     const mobileBtn = document.querySelector("#mobile-menu-btn");
     const mobileMenu = document.querySelector("#mobile-menu");
 
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        html.classList.add('dark');
-    } else {
-        html.classList.remove('dark');
-    }
-    
     themeBtn.addEventListener("click", () => {
         html.classList.toggle("dark");
         localStorage.theme = html.classList.contains('dark') ? 'dark' : 'light';

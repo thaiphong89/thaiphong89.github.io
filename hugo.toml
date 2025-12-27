@@ -74,18 +74,6 @@ theme = "PaperMod"
   weight = 30
 
 [[menu.main]]
-  identifier = "gallery"
-  name = "GALLERY"
-  url = "/gallery/"
-  weight = 40
-
-[[menu.main]]
-  identifier = "portfolio"
-  name = "PORTFOLIO"
-  url = "/portfolio/"
-  weight = 50
-
-[[menu.main]]
   identifier = "contact"
   name = "CONTACT"
   url = "/contact/"

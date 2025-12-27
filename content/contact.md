@@ -5,21 +5,7 @@ draft: false
 description: "Kết nối để trao đổi công việc và học tập."
 ---
 
-<script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-
-<script>
-    tailwind.config = {
-        darkMode: "class",
-        theme: {
-            extend: {
-                colors: {
-                    primary: "#3B82F6", 
-                }
-            }
-        }
-    }
-</script>
 
 <style>
     .contact-card { transition: all 0.3s ease; }
@@ -29,7 +15,7 @@ description: "Kết nối để trao đổi công việc và học tập."
 <div class="w-full max-w-4xl mx-auto py-10 px-4">
     
 <div class="text-center space-y-6 mb-12">
-        <div class="w-24 h-1 bg-primary mx-auto rounded-full opacity-80"></div>
+        <div class="w-24 h-1 bg-blue-500 mx-auto rounded-full opacity-80"></div>
         <p class="text-gray-600 dark:text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
             Tôi luôn sẵn sàng đón nhận các cơ hội hợp tác mới hoặc thảo luận về các dự án thú vị.<br>
             Đừng ngần ngại gửi tin nhắn cho tôi qua các kênh dưới đây.
@@ -37,8 +23,8 @@ description: "Kết nối để trao đổi công việc và học tập."
     </div>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        
-<a href="mailto:email_cua_ban@gmail.com" class="contact-card group flex items-center p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
+            
+<a href="mailto:phongho08092004@gmail.com" class="contact-card group flex items-center p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm">
             <div class="w-14 h-14 bg-blue-50 dark:bg-blue-900/30 text-blue-600 rounded-lg flex items-center justify-center text-2xl mr-4 group-hover:scale-110 transition-transform">
                 <i class="fas fa-envelope"></i>
             </div>
