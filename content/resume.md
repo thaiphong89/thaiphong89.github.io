@@ -39,7 +39,7 @@ description: "Profile"
             Giới thiệu
         </h3>
         <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed text-justify">
-            Sinh viên năm cuối chuyên ngành Kỹ thuật Dữ liệu & Phần mềm tại HUTECH với nền tảng vững chắc về khoa học máy tính và toán thống kê. Có đam mê lớn với việc xây dựng các luồng dữ liệu (Data Pipelines) và khai phá dữ liệu để hỗ trợ ra quyết định kinh doanh. Đang tìm kiếm cơ hội thực tập sinh/nhân viên chính thức vị trí Data Engineer/Data Analyst.
+            Sinh viên năm cuối chuyên ngành Kỹ thuật Dữ liệu & Phần mềm tại HUTECH với nền tảng vững chắc về khoa học máy tính và toán thống kê. Có đam mê lớn với việc xây dựng các luồng dữ liệu (Data Pipelines) và khai phá dữ liệu để hỗ trợ ra quyết định kinh doanh. Đang tìm kiếm cơ hội thực tập sinh/nhân viên chính thức vị trí Data /Software  intern.
         </p>
     </div>
     <div class="md:col-span-1">
@@ -61,7 +61,7 @@ description: "Profile"
     
 <div class="mb-4">
         <div class="flex flex-col md:flex-row justify-between md:items-baseline">
-            <h4 class="text-base md:text-lg font-bold text-slate-800 dark:text-white">Công nghệ Thông tin / Kỹ Sư Dữ Liệu</h4>
+            <h4 class="text-base md:text-lg font-bold text-slate-800 dark:text-white">Công nghệ Thông tin / Dữ Liệu</h4>
             <span class="text-slate-500 italic text-xs md:text-sm">2022 - 2026</span>
         </div>
         <p class="text-sm text-teal-600 dark:text-teal-400 font-medium mb-1">Đại học Công nghệ TP.HCM (HUTECH)</p>
