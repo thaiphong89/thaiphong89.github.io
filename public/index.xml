@@ -16,6 +16,20 @@
       <description>Tổng hợp những kinh nghiệm xương máu, các lỗi sai kinh điển và tư duy quan trọng khi học Java Core mà sinh viên thường bỏ qua.</description>
     </item>
     <item>
+      <title>Project Diary: Tôi Đã Xây Dựng App Quản Lý Chi Tiêu Như Thế Nào?</title>
+      <link>https://thaiphong89.vercel.app/posts/du-an-expense-tracker/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://thaiphong89.vercel.app/posts/du-an-expense-tracker/</guid>
+      <description>Hành trình xây dựng ứng dụng Expense Tracker từ ý tưởng đến thực tế, sử dụng Flutter, SQLite và tư duy phân tích dữ liệu.</description>
+    </item>
+    <item>
+      <title>Java OOP Phần 2: Đừng Lặp Lại Chính Mình (Inheritance)</title>
+      <link>https://thaiphong89.vercel.app/posts/ke_thua_oop/</link>
+      <pubDate>Fri, 12 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/posts/ke_thua_oop/</guid>
+      <description>Lập trình viên giỏi là người biết &amp;rsquo;lười&amp;rsquo; đúng cách. Tại sao phải viết lại những đoạn code giống hệt nhau? Hãy để tính Kế thừa giúp bạn.</description>
+    </item>
+    <item>
       <title>Làm quen với Java: Hướng dẫn cho người mới bắt đầu</title>
       <link>https://thaiphong89.vercel.app/posts/hello/</link>
       <pubDate>Fri, 12 Dec 2025 08:00:00 +0700</pubDate>
@@ -51,13 +65,6 @@
       <description>Để lái xe hơi, bạn có cần biết động cơ đốt trong hoạt động ra sao không? Không. Bạn chỉ cần biết Vô-lăng và Chân ga. Đó chính là sự Trừu tượng hóa.</description>
     </item>
     <item>
-      <title>Project Diary: Tôi Đã Xây Dựng App Quản Lý Chi Tiêu Như Thế Nào?</title>
-      <link>https://thaiphong89.vercel.app/posts/du-an-expense-tracker/</link>
-      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>https://thaiphong89.vercel.app/posts/du-an-expense-tracker/</guid>
-      <description>Hành trình xây dựng ứng dụng Expense Tracker từ ý tưởng đến thực tế, sử dụng Flutter, SQLite và tư duy phân tích dữ liệu.</description>
-    </item>
-    <item>
       <title>Java Phần 2: Biến và Các Kiểu Dữ Liệu Cơ Bản</title>
       <link>https://thaiphong89.vercel.app/posts/java_bien_du_lieu/</link>
       <pubDate>Wed, 03 Dec 2025 08:00:00 +0700</pubDate>
@@ -70,13 +77,6 @@
       <pubDate>Wed, 03 Dec 2025 08:00:00 +0700</pubDate>
       <guid>https://thaiphong89.vercel.app/posts/java-cau-lenh-if-else/</guid>
       <description>Làm sao để chương trình thông minh hơn? Hãy dạy nó cách đưa ra quyết định dựa trên các điều kiện.</description>
-    </item>
-    <item>
-      <title>Java OOP Phần 2: Đừng Lặp Lại Chính Mình (Inheritance)</title>
-      <link>https://thaiphong89.vercel.app/posts/ke_thua_oop/</link>
-      <pubDate>Tue, 02 Dec 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/posts/ke_thua_oop/</guid>
-      <description>Lập trình viên giỏi là người biết &amp;rsquo;lười&amp;rsquo; đúng cách. Tại sao phải viết lại những đoạn code giống hệt nhau? Hãy để tính Kế thừa giúp bạn.</description>
     </item>
     <item>
       <title>Làm quen với Java: Hướng dẫn cho người mới bắt đầu</title>

@@ -17,6 +17,21 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/data-analysis/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/categories/d%E1%BB%B1-%C3%A1n/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/flutter/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://thaiphong89.vercel.app/posts/hanh-trinh-java/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -32,12 +47,27 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/portfolio/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://thaiphong89.vercel.app/posts/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://thaiphong89.vercel.app/tags/programming/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/project/</loc>
+    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/posts/du-an-expense-tracker/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -57,7 +87,27 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/dry/</loc>
+    <lastmod>2025-12-12T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/inheritance/</loc>
+    <lastmod>2025-12-12T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/posts/ke_thua_oop/</loc>
+    <lastmod>2025-12-12T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://thaiphong89.vercel.app/posts/hello/</loc>
+    <lastmod>2025-12-12T08:00:00+07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://thaiphong89.vercel.app/tags/oop/</loc>
     <lastmod>2025-12-12T08:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -83,11 +133,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://thaiphong89.vercel.app/categories/l%C3%BD-thuy%E1%BA%BFt/</loc>
-    <lastmod>2025-12-09T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/oop/</loc>
     <lastmod>2025-12-09T08:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -142,36 +187,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/data-analysis/</loc>
-    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/categories/d%E1%BB%B1-%C3%A1n/</loc>
-    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/flutter/</loc>
-    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/portfolio/</loc>
-    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/project/</loc>
-    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/posts/du-an-expense-tracker/</loc>
-    <lastmod>2025-12-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://thaiphong89.vercel.app/tags/control-flow/</loc>
     <lastmod>2025-12-03T08:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -194,21 +209,6 @@
   </url><url>
     <loc>https://thaiphong89.vercel.app/tags/variables/</loc>
     <lastmod>2025-12-03T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/dry/</loc>
-    <lastmod>2025-12-02T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/tags/inheritance/</loc>
-    <lastmod>2025-12-02T08:00:00+07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://thaiphong89.vercel.app/posts/ke_thua_oop/</loc>
-    <lastmod>2025-12-02T08:00:00+07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

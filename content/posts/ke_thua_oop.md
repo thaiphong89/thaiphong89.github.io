@@ -1,6 +1,6 @@
 ---
 title: "Java OOP Phần 2: Đừng Lặp Lại Chính Mình (Inheritance)"
-date: 2025-12-02T08:00:00+07:00
+date: 2025-12-12T08:00:00+07:00
 draft: false
 summary: "Lập trình viên giỏi là người biết 'lười' đúng cách. Tại sao phải viết lại những đoạn code giống hệt nhau? Hãy để tính Kế thừa giúp bạn."
 tags: ["Java", "OOP", "Inheritance", "DRY"]

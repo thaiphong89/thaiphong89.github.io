@@ -6,8 +6,15 @@
     <description>Recent content in OOP on Blog Cá Nhân </description>
     <generator>Hugo -- 0.152.2</generator>
     <language>vi</language>
-    <lastBuildDate>Tue, 09 Dec 2025 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 08:00:00 +0700</lastBuildDate>
     <atom:link href="https://thaiphong89.vercel.app/tags/oop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java OOP Phần 2: Đừng Lặp Lại Chính Mình (Inheritance)</title>
+      <link>https://thaiphong89.vercel.app/posts/ke_thua_oop/</link>
+      <pubDate>Fri, 12 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/posts/ke_thua_oop/</guid>
+      <description>Lập trình viên giỏi là người biết &amp;rsquo;lười&amp;rsquo; đúng cách. Tại sao phải viết lại những đoạn code giống hệt nhau? Hãy để tính Kế thừa giúp bạn.</description>
+    </item>
     <item>
       <title>Lịch sử &amp; Tầm quan trọng của OOP: Tại sao nó thay đổi thế giới?</title>
       <link>https://thaiphong89.vercel.app/posts/java_oop/</link>
@@ -21,13 +28,6 @@
       <pubDate>Thu, 04 Dec 2025 08:00:00 +0700</pubDate>
       <guid>https://thaiphong89.vercel.app/posts/tru_tuong_oop/</guid>
       <description>Để lái xe hơi, bạn có cần biết động cơ đốt trong hoạt động ra sao không? Không. Bạn chỉ cần biết Vô-lăng và Chân ga. Đó chính là sự Trừu tượng hóa.</description>
-    </item>
-    <item>
-      <title>Java OOP Phần 2: Đừng Lặp Lại Chính Mình (Inheritance)</title>
-      <link>https://thaiphong89.vercel.app/posts/ke_thua_oop/</link>
-      <pubDate>Tue, 02 Dec 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/posts/ke_thua_oop/</guid>
-      <description>Lập trình viên giỏi là người biết &amp;rsquo;lười&amp;rsquo; đúng cách. Tại sao phải viết lại những đoạn code giống hệt nhau? Hãy để tính Kế thừa giúp bạn.</description>
     </item>
     <item>
       <title>Java OOP Phần 3: Sự Linh Hoạt Của Đa Hình (Polymorphism)</title>

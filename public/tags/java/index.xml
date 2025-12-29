@@ -16,6 +16,13 @@
       <description>Tổng hợp những kinh nghiệm xương máu, các lỗi sai kinh điển và tư duy quan trọng khi học Java Core mà sinh viên thường bỏ qua.</description>
     </item>
     <item>
+      <title>Java OOP Phần 2: Đừng Lặp Lại Chính Mình (Inheritance)</title>
+      <link>https://thaiphong89.vercel.app/posts/ke_thua_oop/</link>
+      <pubDate>Fri, 12 Dec 2025 08:00:00 +0700</pubDate>
+      <guid>https://thaiphong89.vercel.app/posts/ke_thua_oop/</guid>
+      <description>Lập trình viên giỏi là người biết &amp;rsquo;lười&amp;rsquo; đúng cách. Tại sao phải viết lại những đoạn code giống hệt nhau? Hãy để tính Kế thừa giúp bạn.</description>
+    </item>
+    <item>
       <title>Làm quen với Java: Hướng dẫn cho người mới bắt đầu</title>
       <link>https://thaiphong89.vercel.app/posts/hello/</link>
       <pubDate>Fri, 12 Dec 2025 08:00:00 +0700</pubDate>
@@ -56,13 +63,6 @@
       <pubDate>Wed, 03 Dec 2025 08:00:00 +0700</pubDate>
       <guid>https://thaiphong89.vercel.app/posts/java-cau-lenh-if-else/</guid>
       <description>Làm sao để chương trình thông minh hơn? Hãy dạy nó cách đưa ra quyết định dựa trên các điều kiện.</description>
-    </item>
-    <item>
-      <title>Java OOP Phần 2: Đừng Lặp Lại Chính Mình (Inheritance)</title>
-      <link>https://thaiphong89.vercel.app/posts/ke_thua_oop/</link>
-      <pubDate>Tue, 02 Dec 2025 08:00:00 +0700</pubDate>
-      <guid>https://thaiphong89.vercel.app/posts/ke_thua_oop/</guid>
-      <description>Lập trình viên giỏi là người biết &amp;rsquo;lười&amp;rsquo; đúng cách. Tại sao phải viết lại những đoạn code giống hệt nhau? Hãy để tính Kế thừa giúp bạn.</description>
     </item>
     <item>
       <title>Làm quen với Java: Hướng dẫn cho người mới bắt đầu</title>

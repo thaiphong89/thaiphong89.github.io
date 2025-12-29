@@ -1,6 +1,6 @@
 ---
 title: "Project Diary: Tôi Đã Xây Dựng App Quản Lý Chi Tiêu Như Thế Nào?"
-date: 2025-12-04
+date: 2025-12-13
 draft: false
 description: "Hành trình xây dựng ứng dụng Expense Tracker từ ý tưởng đến thực tế, sử dụng Flutter, SQLite và tư duy phân tích dữ liệu."
 # DÒNG NÀY ĐỂ HIỂN THỊ NGẮN GỌN BÊN NGOÀI:

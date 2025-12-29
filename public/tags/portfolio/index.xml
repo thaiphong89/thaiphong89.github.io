@@ -6,12 +6,12 @@
     <description>Recent content in Portfolio on Blog Cá Nhân </description>
     <generator>Hugo -- 0.152.2</generator>
     <language>vi</language>
-    <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://thaiphong89.vercel.app/tags/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Project Diary: Tôi Đã Xây Dựng App Quản Lý Chi Tiêu Như Thế Nào?</title>
       <link>https://thaiphong89.vercel.app/posts/du-an-expense-tracker/</link>
-      <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://thaiphong89.vercel.app/posts/du-an-expense-tracker/</guid>
       <description>Hành trình xây dựng ứng dụng Expense Tracker từ ý tưởng đến thực tế, sử dụng Flutter, SQLite và tư duy phân tích dữ liệu.</description>
     </item>
